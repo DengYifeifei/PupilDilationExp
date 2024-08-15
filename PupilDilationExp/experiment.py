@@ -1,6 +1,6 @@
 import os
 import logging
-import importlib
+import importlib.util
 import json
 import re
 from datetime import datetime
@@ -14,7 +14,6 @@ from time import sleep
 from util import jsonify
 from config import KEY_CONTINUE, LABEL_CONTINUE, SAME_SOUND_A, SAME_SOUND_B, DIFFERENT_SOUND, KEYS_CORRECT
 from trial import Trial, AbortKeyPressed
-from graphics import Graphics
 from bonus import Bonus
 from eyetracking import EyeLink, MouseLink
 
@@ -22,12 +21,12 @@ import subprocess
 from copy import deepcopy
 from config import VERSION
 
-from triggers import Triggers  #'''不知道这是干什么的'''
+from triggers import Triggers  
 
 import hackfix
 
 DATA_PATH = f'data/exp/{VERSION}'
-CONFIG_PATH = f'config/{VERSION}' #e1, e2 balabala
+CONFIG_PATH = f'config/{VERSION}' 
 LOG_PATH = 'log'
 PSYCHO_LOG_PATH = 'psycho-log'
 for p in (DATA_PATH, CONFIG_PATH, LOG_PATH, PSYCHO_LOG_PATH):
@@ -85,7 +84,7 @@ def text_box(win, msg, pos, autoDraw=True, wrapWidth=.8, height=.035, alignText=
     import IPython, time; IPython.embed(); time.sleep(0.5)
 
 class Experiment(object):
-    def __init__(self, setting_number, block_len = 30, left_cue_conditions= None, stimA_conditions = None, name=None, full_screen=False, test_mode=False, **kws):
+    def __init__(self, setting_number, block_length = 30, left_cue_conditions= None, stimA_conditions = None, name=None, full_screen=False, test_mode=False, **kws):
         if setting_number is None:
             setting_number = 0 
         self.setting_number = setting_number
@@ -106,8 +105,13 @@ class Experiment(object):
 
         setting_file_name = f's{setting_number}'
         logging.info('setting file name: ' + setting_file_name)
-        setting_file = importlib.import_module(setting_file_name)
-        setting = setting_file.setting
+        setting_path = os.path.join(CONFIG_PATH, f'{setting_file_name}.py')
+        spec = importlib.util.spec_from_file_location(setting_file_name, setting_path)
+        setting_module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(setting_module)
+
+        #setting_file = importlib.import_module(setting_file_name)
+        setting = setting_module.setting
         self.trials = setting['trials']
         self.parameters = setting['parameters']
         self.parameters.update(kws)
@@ -116,7 +120,7 @@ class Experiment(object):
         if 'gaze_tolerance' not in self.parameters:
             self.parameters['gaze_tolerance'] = 1.5
 
-        self.block_len = 30
+        self.block_length = block_length
 
         self.win = self.setup_window()
         self.eyelink = MouseLink(self.win, self.id)  # use mouse by default
@@ -137,7 +141,6 @@ class Experiment(object):
         #print(self.main_conditions_sequence)
 
         
-
         self.stimA_conditions = stimA_conditions
 
         self._message = text_box(self.win, '', pos=(0, 0), autoDraw=True, height=.035)
@@ -151,7 +154,7 @@ class Experiment(object):
         self.practice_i = -1
         self.main_data = []
         self.practice_data = []
-        self.parameters['triggers'] = self.triggers = Triggers(**({'port': 'dummy'} if test_mode else {}))
+        self.parameters['triggers'] = self.triggers = Triggers(**({'port': 'dummy'} if test_mode else {'port': 'dummy'}))
 
     def get_practice_trial(self, repeat=False,**kws):
         if not repeat:
@@ -168,12 +171,12 @@ class Experiment(object):
             #'start_mode': 'immediate',
             # 'space_start': False,
             # ** select
-            **select, #这里只选了一个 e.g.'cue_direction': 'left', 'stimulus': 'A|A', 'correct_response': 'f'
+            **select, 
             **kws
         }
         trial = Trial(self.win, **prm) #gt = GraphTrial(self.win, **prm)
         self.practice_data.append(trial.data) #self.practice_data.append(gt.data)
-        return trial #gt
+        return trial 
 
 ###
     @property
@@ -376,22 +379,26 @@ class Experiment(object):
 
 
     @stage
-    def practice(self):
+    def practice(self,fast=False):
+        if fast:
+            practice_blocklen = 2
+        else:
+            practice_blocklen = self.parameters["combination_num"]
         logging.info('start practice trials')
         failed_times = 0
         correct_proportion = 0 
         while correct_proportion < self.training_pass_boundry:
             self.practice_i = 1
             correct_count = 0
-            for i in range(self.parameters["combination_num"] - self.practice_i):
-                self.message(msg = f'complete {self.parameters["combination_num"] - i} practice rounds to continue',
+            for i in range(practice_blocklen - self.practice_i):
+                self.message(msg = f'complete {practice_blocklen - i} practice rounds to continue',
                             space=True)
                 self.hide_message()
                 trial = self.get_practice_trial(feedback = True)
                 trial.run()
                 if trial.correct_response == 1:
                     correct_count += 1
-            correct_proportion = correct_count/self.parameters["combination_num"]
+            correct_proportion = correct_count/practice_blocklen
             if correct_proportion >= self.training_pass_boundry:
                 self.message(msg="Great job!", space= True)
                 self.hide_message()
@@ -416,12 +423,47 @@ class Experiment(object):
         self.eyelink.setup_calibration()
         self.eyelink.calibrate()
 
+
+    def generate_block_label(self, left_cue_prob= 0.3, stimA_prob = 0.7):
+        num_left = int(10 * left_cue_prob)
+        num_right = 10 - num_left
+
+        num_o = int(10 * stimA_prob)
+        num_x = 10 - num_o
+        block_label = '<' * num_left + '>' * num_right + ' ' + 'o' * num_o + 'x' * num_x
+
+        return block_label
+
+    def center_message(self, msg, space=True):
+        visual.TextStim(self.win, msg, color='white', wrapWidth=.8, alignText='center', height=.035).draw()
+        self.win.flip()
+        if space:
+            event.waitKeys(keyList=[KEY_CONTINUE])   
+
+
     @stage
     def intro_main(self):
-        self.message(msg="Alright! We're ready to begin the main phase of the experiment.", space=True)
+        self.message(msg= "Alright! We're ready to begin the main phase of the experiment.", space=True)
         self.hide_message()
 
-        self.message(msg = f"There will be {self.n_block} blocks. Each blocks take 4 minutes maximum.", space=True)
+        self.message(msg = f"There will be {self.n_block} blocks. Each block inludes 30 trials , taking 4 minites maximum.", space=True)
+        self.hide_message()
+
+        self.message(msg= "The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block. " 
+                     , space= True)
+        self.hide_message()
+        
+        example_lable = self.generate_block_label()
+        self.message(msg = "For example, you may see a pattern as below. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli.", tip_text=example_lable)
+        self.hide_message()
+
+        self.message(msg = "Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :)", space= True)
+        self.hide_message()
+
+        self.message(msg= "Ready? Let go!", space= True)
+        self.hide_message()
+
+
 
     def determine_cue(self, left_cue_probability):
         if not 0 <= left_cue_probability <= 1:
@@ -465,11 +507,7 @@ class Experiment(object):
         
         return None
 
-    def center_message(self, msg, space=True):
-        visual.TextStim(self.win, msg, color='white', wrapWidth=.8, alignText='center', height=.035).draw()
-        self.win.flip()
-        if space:
-            event.waitKeys(keyList=[KEY_CONTINUE])
+
 
     def run_test_trial(self, left_cue_probability, A_probability):
         trial = self.generate_trialstim(left_cue_probability, A_probability)
@@ -498,18 +536,19 @@ class Experiment(object):
             A_probability = self.main_conditions_sequence[i]['stimA_condition']
             logging.info(f"Starting block {i}: {self.main_conditions_sequence[i]}")
             block_notice = f"Starting block {i}: {self.main_conditions_sequence[i]}"
-            self.message(msg=block_notice, tip_text="please focus on the center of the screen as much as possible.")
+            block_label = self.generate_block_label(left_cue_prob=left_cue_probability, stimA_prob=A_probability)
+            self.message(msg=block_notice, tip_text=block_label)
             self.hide_message()
 
             trial_count = 0
-            print(trial_count, self.block_len)
+            print(trial_count, self.block_length)
 
-            while trial_count < self.block_len: 
+            while trial_count < self.block_length: 
                 try:
                     trial_count += 1
                     print(trial_count)
                     self.run_test_trial(left_cue_probability, A_probability)
-                    logging.info('%d/%d', trial_count, self.block_len)
+                    logging.info('%d/%d', trial_count, self.block_length)
 
                 except Exception as e:
                     if isinstance(e, AbortKeyPressed):
@@ -543,7 +582,7 @@ class Experiment(object):
     @property
     def all_data(self):
         return {
-            'config_number': self.config_number,
+            'config_number': self.setting_number,
             'parameters': self.parameters,
             'main_data': self.main_data,
             'practice_data': self.practice_data,

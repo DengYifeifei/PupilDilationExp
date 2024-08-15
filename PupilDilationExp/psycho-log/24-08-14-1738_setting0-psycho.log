@@ -1,0 +1,15 @@
+21.7270 	INFO 	time is 2024-08-14 17:38:02,472213
+21.7784 	WARNING 	Monitor specification not found. Creating a temporary one...
+21.7916 	WARNING 	User requested fullscreen with size [1350  750], but screen is actually [1440, 900]. Using actual size
+23.4081 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+23.4097 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fee724b47f0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fee724b4790>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fee724b45e0>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fee72b6abe0>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+23.4097 	EXP 	window1: backgroundImage = None
+23.4098 	EXP 	window1: backgroundFit = 'cover'
+23.4303 	WARNING 	t of last frame was 22.39ms (=1/44)
+23.4307 	INFO 	Mouse: using default window
+23.4337 	EXP 	window1: mouseVisible = False
+23.4338 	EXP 	window1: units = 'pix'
+23.4339 	INFO 	Mouse: using default window

@@ -1,12 +1,10 @@
-stimA_prob = 0.6 
-left_cue_prob = 0.5
 
 setting = {
     "parameters": {
         "points_per_cent": 2,
         "time_limit": 5,
         "correct_responses": ['j', 'f'],
-        "condition_probabilities": left_cue_prob*([stimA_prob**2, stimA_prob*(1-stimA_prob), (1-stimA_prob)**2, (1-stimA_prob)*stimA_prob]*2),
+        #"condition_probabilities": left_cue_prob*([stimA_prob**2, stimA_prob*(1-stimA_prob), (1-stimA_prob)**2, (1-stimA_prob)*stimA_prob]*2),
         "combination_num": 8 
     },
     "trials": {

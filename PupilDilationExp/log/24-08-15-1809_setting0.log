@@ -1,0 +1,19 @@
+2024-08-15 18:09:48,834 [INFO]  starting up 24-08-15-1809_setting0 at 12.275082024993026
+2024-08-15 18:09:48,881 [INFO]  git SHA: 807713c358080d75c6666d5fc87f489cf27dea76
+2024-08-15 18:09:48,882 [INFO]  setting file name: s0
+2024-08-15 18:09:48,883 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-15 18:09:50,526 [INFO]  Created window with size [1300 1000]
+2024-08-15 18:09:50,592 [ERROR]  Failed to open port: /dev/cu.usbserial-A900a2R9
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/cu.usbserial-A900a2R9'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/triggers.py", line 23, in __init__
+    self.ser.open()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/cu.usbserial-A900a2R9: [Errno 2] No such file or directory: '/dev/cu.usbserial-A900a2R9'

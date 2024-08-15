@@ -1,0 +1,65 @@
+10.4534 	INFO 	time is 2024-08-15 18:10:28,755882
+10.4889 	WARNING 	Monitor specification not found. Creating a temporary one...
+12.0551 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+12.0556 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f91486c92b0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f91486c9250>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f91486c90a0>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f91460a67c0>, multiSample=False, name='window1', numSamples=2, pos=(557, 325), screen=0, size=array([1300, 1000]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.0557 	EXP 	window1: backgroundImage = None
+12.0557 	EXP 	window1: backgroundFit = 'cover'
+12.0687 	INFO 	Mouse: using default window
+12.0726 	EXP 	window1: mouseVisible = False
+12.0727 	EXP 	window1: units = 'pix'
+12.0728 	INFO 	Mouse: using default window
+12.1259 	WARNING 	t of last frame was 57.34ms (=1/17)
+12.1490 	WARNING 	t of last frame was 23.12ms (=1/43)
+13.0344 	DATA 	Keypress: space
+13.0376 	WARNING 	t of last frame was 888.59ms (=1/1)
+14.3054 	DATA 	Keypress: space
+14.3078 	WARNING 	t of last frame was 1248.08ms (=1/0)
+15.5514 	EXP 	Sound  reached end of file
+15.5514 	EXP 	Sound  started
+16.3772 	DATA 	Keypress: space
+16.3800 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+17.4059 	EXP 	Sound  reached end of file
+17.4060 	EXP 	Sound  started
+18.6166 	DATA 	Keypress: space
+20.1895 	DATA 	Keypress: space
+20.9877 	DATA 	Keypress: space
+22.0052 	EXP 	Sound  reached end of file
+22.0052 	EXP 	Sound  started
+25.0250 	DATA 	Keypress: f
+26.0631 	EXP 	Sound  reached end of file
+26.0631 	EXP 	Sound  started
+26.8886 	DATA 	Keypress: backspace
+28.0106 	DATA 	Keypress: j
+29.1138 	DATA 	Keypress: space
+31.3065 	DATA 	Keypress: space
+34.5567 	DATA 	Keypress: space
+34.5848 	EXP 	Sound  reached end of file
+34.5849 	EXP 	Sound  started
+38.6531 	DATA 	Keypress: f
+39.5906 	DATA 	Keypress: space
+42.6271 	DATA 	Keypress: space
+44.2984 	DATA 	Keypress: space
+46.4502 	DATA 	Keypress: j
+46.8648 	EXP 	Sound  reached end of file
+46.8649 	EXP 	Sound  started
+48.7059 	DATA 	Keypress: j
+51.2385 	DATA 	Keypress: backspace
+51.5917 	DATA 	Keypress: backspace
+52.1222 	DATA 	Keypress: space
+62.9554 	DATA 	Keypress: q
+63.8951 	DATA 	Keypress: backspace
+64.9192 	DATA 	Mouse: Left button down, pos=(398,364)
+65.0690 	DATA 	Mouse:  Left button up, pos=(398,364)
+65.3572 	DATA 	Keypress: q
+65.7619 	DATA 	Keypress: q
+66.2711 	DATA 	Keypress: backspace
+66.4194 	DATA 	Keypress: backspace
+66.6096 	DATA 	Keypress: backspace
+66.8924 	DATA 	Keypress: capslock
+67.1990 	DATA 	Keypress: q
+67.5605 	DATA 	Keypress: q
+67.9159 	DATA 	Keypress: q
+68.2710 	DATA 	Keypress: q

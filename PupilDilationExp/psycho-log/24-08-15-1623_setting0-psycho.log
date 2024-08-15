@@ -1,0 +1,26 @@
+9.4931 	INFO 	time is 2024-08-15 16:23:18,193007
+9.5257 	WARNING 	Monitor specification not found. Creating a temporary one...
+11.0184 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.0189 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc797494880>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc797494820>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc797494670>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fc7951b44c0>, multiSample=False, name='window1', numSamples=2, pos=(557, 325), screen=0, size=array([1300, 1000]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.0190 	EXP 	window1: backgroundImage = None
+11.0190 	EXP 	window1: backgroundFit = 'cover'
+11.0317 	INFO 	Mouse: using default window
+11.0323 	EXP 	window1: mouseVisible = False
+11.0325 	EXP 	window1: units = 'pix'
+11.0325 	INFO 	Mouse: using default window
+11.0906 	WARNING 	t of last frame was 59.03ms (=1/16)
+11.1242 	WARNING 	t of last frame was 33.61ms (=1/29)
+36.4343 	DATA 	Keypress: lctrl
+36.7374 	DATA 	Keypress: c
+37.4772 	DATA 	Keypress: c
+38.4645 	DATA 	Mouse: Left button down, pos=(134,343)
+38.6345 	DATA 	Mouse:  Left button up, pos=(134,343)
+40.1421 	DATA 	Mouse: Left button down, pos=(394,268)
+40.2420 	DATA 	Mouse:  Left button up, pos=(394,267)
+40.7589 	DATA 	Keypress: lctrl
+41.0578 	DATA 	Keypress: c
+43.2357 	WARNING 	t of last frame was 32111.53ms (=1/0)
+48.7680 	WARNING 	t of last frame was 5532.30ms (=1/0)

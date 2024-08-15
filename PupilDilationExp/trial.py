@@ -11,8 +11,6 @@ wait = core.wait
 
 from config import KEY_CONTINUE, KEY_ABORT, SOUND_PATH, KEYS_CORRECT
 
-from graphics import Graphics, FRAME_RATE
-
 # TRIGGERS = {
 #     'show description': 0,
 #     'show graph': 1,
@@ -50,6 +48,7 @@ class Trial(object):
         self.fixation_duration = 0.5
         self.cue_duration = 1.5
         self.sound_duration = 1
+        self.post_trial_gap = random.uniform(1.5, 2.5)
         self.feedback_duration = feedback_duration
         self.feedback = feedback 
         self.action_time = action_time
@@ -301,7 +300,8 @@ class Trial(object):
         if self.eyelink:
             self.eyelink.stop_recording()
         
-        wait(0.5)
+    
+        wait(self.post_trial_gap)
         
         self.win.flip()
 

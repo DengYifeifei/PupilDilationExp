@@ -1,6 +1,4 @@
 
-# stimA_prob = 0.6 
-# left_cue_prob = 0.5
 
 setting = {
     "parameters": {
