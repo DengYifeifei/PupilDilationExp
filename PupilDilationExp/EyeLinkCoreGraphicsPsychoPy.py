@@ -45,7 +45,7 @@ from psychopy.sound import Sound
 
 #allow to disable sound, or if we failed to initialize pygame.mixer or failed to load audio file
 #continue experiment without sound.
-DISABLE_AUDIO=True
+DISABLE_AUDIO=False
 
 
 # Show only critical log message in the console
@@ -190,10 +190,10 @@ class EyeLinkCoreGraphicsPsychoPy(pylink.EyeLinkCustomDisplay):
         """ Fix macOS retina display issue """
 
         # Resolution fix for Mac retina displays
-        # if 'Darwin' in platform.system():
-        #     self._w = int(self._w/ 2.0)
-        #     self._h = int(self._h / 2.0)
-        #     self._calibInst.pos =  (20 - self._w/2, self._h/2 - 20)
+        if 'Darwin' in platform.system():
+            self._w = int(self._w/ 2.0)
+            self._h = int(self._h / 2.0)
+            self._calibInst.pos =  (20 - self._w/2, self._h/2 - 20)
 
     def getForegroundColor(self):
         """ Get the foreground color """
@@ -234,6 +234,7 @@ class EyeLinkCoreGraphicsPsychoPy(pylink.EyeLinkCustomDisplay):
         Parameters:
             type: "circle" (default), "picture", "movie", "spiral"
         """
+
         self._calTarget = type
 
     def setMovieTarget(self, movie_target):

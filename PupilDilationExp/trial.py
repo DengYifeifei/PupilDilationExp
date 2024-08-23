@@ -48,7 +48,7 @@ class Trial(object):
         self.fixation_duration = 0.5
         self.cue_duration = 1.5
         self.sound_duration = 1
-        self.post_trial_gap = random.uniform(1.5, 2.5)
+        self.pre_trial_gap = random.uniform(1.5, 2.5)
         self.feedback_duration = feedback_duration
         self.feedback = feedback 
         self.action_time = action_time
@@ -254,7 +254,7 @@ class Trial(object):
         self.start_time = core.getTime()
 
         self.fixation_cross() 
-        wait(self.fixation_duration)
+        wait(self.pre_trial_gap)
         self.win.flip()
 
         self.cue()
@@ -301,7 +301,7 @@ class Trial(object):
             self.eyelink.stop_recording()
         
     
-        wait(self.post_trial_gap)
+        #wait(self.pre_trial_gap)
         
         self.win.flip()
 

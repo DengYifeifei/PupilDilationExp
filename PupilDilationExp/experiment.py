@@ -120,7 +120,9 @@ class Experiment(object):
         if 'gaze_tolerance' not in self.parameters:
             self.parameters['gaze_tolerance'] = 1.5
 
-        self.block_length = block_length
+        self.practice_blocklen = self.parameters["combination_num"]
+        self.block_length = 30
+        
 
         self.win = self.setup_window()
         self.eyelink = MouseLink(self.win, self.id)  # use mouse by default
@@ -284,16 +286,16 @@ class Experiment(object):
         self.message(msg='During the test, you are going to receive a series of sound pairs coming from both the left and the right channels of your headset.', space = True)
         self.hide_message()
 
-        self.message(msg='Sometimes, the sounds are different:')
+        self.message(msg='Sometimes, the sounds are the same:')
         core.wait(1.0)
-        sound.Sound(DIFFERENT_SOUND, secs=self.sound_len).play()
+        sound.Sound(SAME_SOUND_A, secs=self.sound_len).play()
         event.waitKeys(keyList=['space', KEY_CONTINUE])
         self.hide_message()
 
 
-        self.message(msg='Other times, they are the same.')
+        self.message(msg='Other times, they are the different.')
         core.wait(1.0)
-        sound.Sound(SAME_SOUND_A, secs=self.sound_len).play()
+        sound.Sound(DIFFERENT_SOUND, secs=self.sound_len).play()
         event.waitKeys(keyList=['space', KEY_CONTINUE])
         self.hide_message()
 
@@ -339,7 +341,7 @@ class Experiment(object):
 
         cue = example_trial.cue(training_mode = True)
         core.wait(1)
-        self.message(tmsg= "Then you'll receive a cue. Here, it is a left sign, which tells you that you are expected to respond to the sound coming from the left channel. Now please pay attention to the right channel!",
+        self.message(tmsg= "Then you'll receive a cue. Here, it is a left sign, which tells you that you are expected to respond to the sound coming from the left channel. Now please pay attention to the left channel!",
                             space=True)
         cue.setAutoDraw(False)
         self.win.flip()
@@ -371,34 +373,34 @@ class Experiment(object):
         self.hide_message()
 
         example_trial.feedback_time = core.getTime()
-        example_trial.show_feedback(example_trial.correct_response, example_trial.recieved_response)
-
-        
-        self.message(msg= f"Now you know the rules. You'll be able to pass the training session if you get {self.training_pass_boundry} of the {self.parameters['combination_num']} trials right. Ready? Let's begin!", space =True)
+        if example_trial.recieved_response:
+            example_trial.show_feedback(example_trial.correct_response, example_trial.recieved_response)
+        else:
+            self.message(msg= f"No response recieved. The correct answer should be 'f'.", space =True)
+            self.hide_message()
+            
+        self.message(msg= f"Okay, now you know the rules. You'll be able to pass the training session if you get {self.training_pass_boundry} of the {self.parameters['combination_num']} trials right. Ready? Let's begin!", space =True)
         self.hide_message()
 
 
     @stage
-    def practice(self,fast=False):
-        if fast:
-            practice_blocklen = 2
-        else:
-            practice_blocklen = self.parameters["combination_num"]
+    def practice(self):
         logging.info('start practice trials')
         failed_times = 0
         correct_proportion = 0 
         while correct_proportion < self.training_pass_boundry:
             self.practice_i = 1
             correct_count = 0
-            for i in range(practice_blocklen - self.practice_i):
-                self.message(msg = f'complete {practice_blocklen - i} practice rounds to continue',
+            for i in range(self.practice_blocklen - self.practice_i):
+                self.message(msg = f'complete {self.practice_blocklen - i} practice rounds to continue',
                             space=True)
                 self.hide_message()
                 trial = self.get_practice_trial(feedback = True)
                 trial.run()
                 if trial.correct_response == 1:
                     correct_count += 1
-            correct_proportion = correct_count/practice_blocklen
+            correct_proportion = correct_count/self.practice_blocklen
+            logging.info(f'correct proportion {correct_proportion}')
             if correct_proportion >= self.training_pass_boundry:
                 self.message(msg="Great job!", space= True)
                 self.hide_message()
@@ -414,11 +416,12 @@ class Experiment(object):
 
     @stage
     def setup_eyetracker(self, mouse=False):
-        self.message(msg="Now we're going to calibrate the eyetracker. When you see a black "
-                      "circle, look at it and hold your gaze steady", tip_text="wait for the experimenter")
-        event.waitKeys(keyList=['space', 'c'])
+        self.message("Now we're going to calibrate the eyetracker. Please tell the experimenter.",
+            tip_text="Wait for the experimenter (space)", space=True)
         self.hide_message()
-        if not mouse:
+        if mouse:
+            self.eyelink = MouseLink(self.win, self.id)
+        else:
             self.eyelink = EyeLink(self.win, self.id)
         self.eyelink.setup_calibration()
         self.eyelink.calibrate()
@@ -426,13 +429,15 @@ class Experiment(object):
 
     def generate_block_label(self, left_cue_prob= 0.3, stimA_prob = 0.7):
         num_left = int(10 * left_cue_prob)
-        num_right = 10 - num_left
+        num_right = 10 - num_left 
 
         num_o = int(10 * stimA_prob)
         num_x = 10 - num_o
-        block_label = '<' * num_left + '>' * num_right + ' ' + 'o' * num_o + 'x' * num_x
+        cue_label = '<' * num_left + '>' * num_right 
+        
+        stim_label = 'o' * num_o + 'x' * num_x
 
-        return block_label
+        return cue_label, stim_label
 
     def center_message(self, msg, space=True):
         visual.TextStim(self.win, msg, color='white', wrapWidth=.8, alignText='center', height=.035).draw()
@@ -446,7 +451,7 @@ class Experiment(object):
         self.message(msg= "Alright! We're ready to begin the main phase of the experiment.", space=True)
         self.hide_message()
 
-        self.message(msg = f"There will be {self.n_block} blocks. Each block inludes 30 trials , taking 4 minites maximum.", space=True)
+        self.message(msg = f"There will be {self.n_block} blocks. Each block inludes 30 trials, taking 4 minites maximum.", space=True)
         self.hide_message()
 
         self.message(msg= "The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block. " 
@@ -503,6 +508,8 @@ class Experiment(object):
         # Find the matching response
         for response in responses:
             if response['cue_direction'] == cue_direction and response['stimulus'] == stimulus:
+                response['left_cue_condition'] = left_cue_probability
+                response['stimA_condition'] = A_probability
                 return response
         
         return None
@@ -529,15 +536,17 @@ class Experiment(object):
 
         # iterating through blocks 
         start = 0 if resume_block is None else resume_block - 1
+        
 
-        for i in range(start, len(self.main_conditions_sequence)):
+        for i in range(start, self.n_block):
             
             left_cue_probability = self.main_conditions_sequence[i]['left_cue_condition']
             A_probability = self.main_conditions_sequence[i]['stimA_condition']
+            cue_label, stim_label = self.generate_block_label(left_cue_prob=left_cue_probability, stimA_prob=A_probability)
             logging.info(f"Starting block {i}: {self.main_conditions_sequence[i]}")
-            block_notice = f"Starting block {i}: {self.main_conditions_sequence[i]}"
-            block_label = self.generate_block_label(left_cue_prob=left_cue_probability, stimA_prob=A_probability)
-            self.message(msg=block_notice, tip_text=block_label)
+
+            logging.info(f"block {i} label:{cue_label, stim_label}")
+            self.message(msg= f"Block {i+1}: \ncue proportion {cue_label} \nstimulus proportion {stim_label}", space=True)
             self.hide_message()
 
             trial_count = 0
@@ -604,9 +613,10 @@ class Experiment(object):
         if self.eyelink:
             self.eyelink.save_data()
 
-        self.message(f"You're done! {self.bonus.report_bonus('final')}",
-                     tip_text="data saved! press Button 1 to exit", space=True)
-        print("\n\nFINAL BONUS: ", self.bonus.dollars())
+        self.message("Data saved! Please let the experimenter know that you've completed the study.", space=True,
+                    tip_text='press space to exit')
+        
+       #print("\n\nFINAL BONUS: ", self.bonus.dollars())
 
     def emergency_save_data(self):
         logging.warning('emergency save data')

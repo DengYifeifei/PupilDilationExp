@@ -1,0 +1,84 @@
+3.4104 	WARNING 	The 'psychtoolbox' library cannot be loaded but is required for audio capture (use `pip install psychtoolbox` to get it). Microphone recording will be unavailable this session. Note that opening a microphone stream will raise an error.
+3.4140 	ERROR 	Support for the `sounddevice` audio backend is not available this session. Please install `psychopy-sounddevice` and restart the session to enable support.
+3.4142 	ERROR 	Support for the `pyo` audio backend is not available this session. Please install `psychopy-pyo` and restart the session to enable support.
+3.4144 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['PTB', 'sounddevice', 'pyo', 'pygame'] (in that order).
+3.5125 	INFO 	time is 2024-08-20 17:30:55,279960
+3.5434 	WARNING 	Monitor specification not found. Creating a temporary one...
+3.5570 	WARNING 	User requested fullscreen with size [1350  750], but screen is actually [1920, 1080]. Using actual size
+4.7716 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+4.7723 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x16de8ac10>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x16de8abb0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x16de8aa00>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x30a6782e0>, multiSample=False, name='window1', numSamples=2, pos=[480.0, 270.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+4.7725 	EXP 	window1: mouseVisible = True
+4.7726 	EXP 	window1: backgroundImage = None
+4.7726 	EXP 	window1: backgroundFit = 'cover'
+4.7760 	INFO 	Mouse: using default window
+4.7761 	EXP 	window1: mouseVisible = True
+4.7767 	EXP 	window1: mouseVisible = False
+4.7768 	EXP 	window1: units = 'pix'
+4.7768 	INFO 	Mouse: using default window
+4.9732 	WARNING 	t of last frame was 197.31ms (=1/5)
+5.8051 	DATA 	Keypress: space
+5.8075 	WARNING 	t of last frame was 821.14ms (=1/1)
+6.1363 	EXP 	window1: units = 'pix'
+6.1364 	INFO 	Mouse: using default window
+6.1676 	INFO 	Mouse: using default window
+6.1879 	WARNING 	t of last frame was 380.35ms (=1/2)
+20.6549 	WARNING 	t of last frame was 14467.07ms (=1/0)
+21.8354 	DATA 	Keypress: space
+21.8437 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+22.5608 	DATA 	Keypress: space
+23.3023 	DATA 	Keypress: space
+24.1861 	DATA 	Keypress: space
+24.8551 	DATA 	Keypress: space
+26.0163 	DATA 	Keypress: space
+26.9746 	DATA 	Keypress: space
+27.9092 	DATA 	Keypress: space
+29.5911 	DATA 	Keypress: space
+30.6215 	DATA 	Keypress: space
+31.5511 	DATA 	Keypress: space
+62.0514 	DATA 	Keypress: space
+62.5393 	DATA 	Keypress: space
+63.2542 	DATA 	Keypress: space
+64.2171 	DATA 	Keypress: space
+64.7656 	DATA 	Keypress: space
+65.1393 	DATA 	Keypress: space
+65.4329 	DATA 	Keypress: space
+65.7269 	DATA 	Keypress: space
+66.1641 	DATA 	Keypress: space
+66.9054 	DATA 	Keypress: space
+75.8964 	DATA 	Keypress: space
+76.6380 	DATA 	Keypress: space
+80.5827 	DATA 	Keypress: space
+81.0805 	DATA 	Keypress: space
+81.6108 	DATA 	Keypress: space
+82.1313 	DATA 	Keypress: space
+82.7950 	DATA 	Keypress: space
+83.6390 	DATA 	Keypress: space
+93.0321 	DATA 	Keypress: space
+93.6726 	DATA 	Keypress: space
+94.2233 	DATA 	Keypress: space
+94.8125 	DATA 	Keypress: space
+95.4422 	DATA 	Keypress: space
+95.9927 	DATA 	Keypress: space
+96.5932 	DATA 	Keypress: space
+97.1582 	DATA 	Keypress: space
+97.6848 	DATA 	Keypress: space
+98.3756 	DATA 	Keypress: space
+99.0151 	DATA 	Keypress: space
+99.5911 	DATA 	Keypress: space
+100.2310 	DATA 	Keypress: space
+107.9591 	EXP 	window1: units = 'pix'
+115.2039 	EXP 	window1: units = 'pix'
+115.2157 	EXP 	window1: units = 'pix'
+121.1458 	DATA 	Keypress: space
+124.9773 	EXP 	Set  sound=./stim/G|P.mp3
+124.9774 	EXP 	Sound  started
+127.2097 	DATA 	Keypress: j
+131.3833 	EXP 	Set  sound=./stim/G|G.mp3
+131.3835 	EXP 	Sound  started
+133.9057 	DATA 	Keypress: j
+138.1164 	EXP 	Set  sound=./stim/P|P.mp3
+138.1166 	EXP 	Sound  started
+139.5616 	DATA 	Keypress: j

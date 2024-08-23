@@ -1,0 +1,21 @@
+1.5860 	WARNING 	The 'psychtoolbox' library cannot be loaded but is required for audio capture (use `pip install psychtoolbox` to get it). Microphone recording will be unavailable this session. Note that opening a microphone stream will raise an error.
+1.5890 	ERROR 	Support for the `sounddevice` audio backend is not available this session. Please install `psychopy-sounddevice` and restart the session to enable support.
+1.5892 	ERROR 	Support for the `pyo` audio backend is not available this session. Please install `psychopy-pyo` and restart the session to enable support.
+1.5894 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['PTB', 'sounddevice', 'pyo', 'pygame'] (in that order).
+1.6046 	INFO 	time is 2024-08-15 19:07:59,218446
+1.6327 	WARNING 	Monitor specification not found. Creating a temporary one...
+1.6358 	WARNING 	User requested fullscreen with size [1350  750], but screen is actually [1920, 1080]. Using actual size
+2.8255 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+2.8258 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x16fd06a00>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x16fd069a0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x16fd067f0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x3085cc5b0>, multiSample=False, name='window1', numSamples=2, pos=[480.0, 270.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+2.8259 	EXP 	window1: mouseVisible = True
+2.8260 	EXP 	window1: backgroundImage = None
+2.8260 	EXP 	window1: backgroundFit = 'cover'
+2.8399 	INFO 	Mouse: using default window
+2.8402 	EXP 	window1: mouseVisible = True
+2.8412 	EXP 	window1: mouseVisible = False
+2.8413 	EXP 	window1: units = 'pix'
+2.8413 	INFO 	Mouse: using default window
+2.8865 	WARNING 	t of last frame was 46.73ms (=1/21)

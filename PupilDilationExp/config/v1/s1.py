@@ -9,7 +9,7 @@ setting = {
     },
     "trials": {
         "practice": [
-            {'cue_direction': 'left', 'stimulus': 'A|B', 'correct_response': 'j'},
+            {'cue_direction': 'left', 'stimulus': 'B|A', 'correct_response': 'f'},
             {'cue_direction': 'left', 'stimulus': 'A|A', 'correct_response': 'j'},
             {'cue_direction': 'left', 'stimulus': 'A|B', 'correct_response': 'j'},
             {'cue_direction': 'left', 'stimulus': 'B|B', 'correct_response': 'f'},
