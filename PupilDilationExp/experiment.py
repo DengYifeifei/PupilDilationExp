@@ -416,7 +416,7 @@ class Experiment(object):
     @stage
     def setup_eyetracker(self, mouse=False):
         self.message("Now we're going to calibrate the eyetracker. Please tell the experimenter.",
-            tip_text="Wait for the experimenter (space)", space=True)
+            tip_text="Wait for the experimenter", space=True)
         self.hide_message()
         if mouse:
             self.eyelink = MouseLink(self.win, self.id)
@@ -447,25 +447,22 @@ class Experiment(object):
 
     @stage
     def intro_main(self):
-        self.message(msg= "There's a couple of additional rules/info you need to know before starting the main phase of the experiment.", space=True)
+        self.message(msg= "There's a couple of additional rules/information you need to know before starting the main phase of the experiment.", space=True)
         self.hide_message()
 
         self.message(msg = f"You'll see {self.n_block} blocks in the main phase. Each block inludes 30 trials, taking 4 minites maximum.", space=True)
         self.hide_message()
 
-        self.message(msg= "Between the blocks, the chances of you seeing a particular cue or stimulus vary. " 
+        self.message(msg= "Between the blocks, the chances of you seeing a particular cue and a particular stimulus vary. " 
                      , space= True)
         self.hide_message()
         
         example_cue_label, example_stim_label = self.generate_block_label() 
-        self.message(msg = f"{example_cue_label+' '+example_stim_label} \nFor example! This pattern indicates that you will see the left cue approximately 30% of the time and hear one of the two stimuli approximately 70% of the time.", space=True)
+        self.message(msg = f"{example_cue_label+' '+example_stim_label} \nFor example, the pattern above indicates that for the following block, you will see the left cue approximately 30% of the time and hear one of the two stimuli approximately 70% of the time.", space=True)
 
         self.hide_message()
 
         self.message(msg = "Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help the eyetracker get better measurements  :)", space= True)
-        self.hide_message()
-
-        self.message(msg= "Ready? Let go!", space= True)
         self.hide_message()
 
 
@@ -525,7 +522,8 @@ class Experiment(object):
         self.main_data.append(trial.data)
 
         logging.info('gt.status is %s', trial.status)
-        self.bonus.add_points(trial.correct)  # bonus class 
+        if trial.rt:
+            self.bonus.add_points(trial.correct*(3.0-trial.rt))  # bonus class 
         logging.info('current bonus: %s', self.bonus.dollars())
         # self.total_score += int(trial.score)
 
@@ -533,6 +531,9 @@ class Experiment(object):
 
     @stage
     def main(self, resume_block=None):
+
+        self.message(msg= "Ready? Let go!", space= True)
+        self.hide_message()
 
         # iterating through blocks 
         start = 0 if resume_block is None else resume_block - 1

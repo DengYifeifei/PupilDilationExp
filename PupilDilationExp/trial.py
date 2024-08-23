@@ -60,12 +60,14 @@ class Trial(object):
         self.eyelink = eyelink
         self.triggers = triggers
         self.recieved_response = None
+        self.response_time = None
 
         self.status = 'ok'
         self.start_time = self.done_time = None
         #self.disable_click = False
         
         self.correct = 0 #self.score = 0
+        self.rt = None
         #self.current_state = None
         self.fixated = None #在的时候有用calibration的时候有用
         self.fix_verified = None #后面没有用到
@@ -268,6 +270,7 @@ class Trial(object):
         #self.log('sound')
         #self.sound_start = core.getTime
         self.sound()
+        sound_onset = core.getTime()
         
         wait(0.5)
         self.log('start decision window')
@@ -275,6 +278,7 @@ class Trial(object):
 
         if self.recieved_response:
             self.response_time = core.getTime()
+            self.rt = self.response_time - sound_onset
 
             if self.recieved_response[0] == self.correct_response:
                 self.correct = 1
@@ -283,8 +287,6 @@ class Trial(object):
                 self.log('response', info = {'response':self.recieved_response[0],'performance':'Incorrect'})
 
         else:
-            self.correct = 0
-            self.response_time = None
             self.log('response', info = {'response':self.recieved_response,'performance':None})
         
 
