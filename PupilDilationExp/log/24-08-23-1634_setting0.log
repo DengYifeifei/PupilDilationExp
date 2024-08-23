@@ -1,0 +1,29 @@
+2024-08-23 16:34:29,747 [INFO]  starting up 24-08-23-1634_setting0 at 20.953870803001337
+2024-08-23 16:34:29,778 [INFO]  git SHA: c9de28b4abdb54d6f72023aae035dd87567c6062
+2024-08-23 16:34:29,778 [INFO]  setting file name: s0
+2024-08-23 16:34:29,780 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 16:34:31,407 [INFO]  Created window with size [1300 1000]
+2024-08-23 16:34:31,576 [INFO]  Using dummy triggers
+2024-08-23 16:34:31,576 [INFO]  begin intro_main
+2024-08-23 16:34:31,576 [DEBUG]  message: There's a couple of additional rules/info you need to know before starting the main phase of the experiment. (None)
+2024-08-23 16:34:40,734 [DEBUG]  message: In the main phase, there will be 9 blocks. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 16:35:07,282 [DEBUG]  message: Between the blocks, the chances of you seeing a particular cue or stimulus varies.  (None)
+2024-08-23 16:35:09,890 [DEBUG]  message: For example, you may see a pattern as below. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli. (<<<>>>>>>>oooooooxxx)
+2024-08-23 16:35:09,922 [DEBUG]  message: Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :) (None)
+2024-08-23 16:35:22,427 [ERROR]  Caught exception in stage intro_main
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 464, in intro_main
+    self.message(msg = "Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :)", space= True)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 267, in message
+    event.waitKeys(keyList=['space', KEY_CONTINUE])
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/event.py", line 529, in waitKeys
+    keys = getKeys(keyList=keyList, modifiers=modifiers,
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/event.py", line 412, in getKeys
+    win.dispatch_events()  # pump events on pyglet windows
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/pyglet/window/cocoa/__init__.py", line 305, in dispatch_events
+    pool = NSAutoreleasePool.new()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/pyglet/libs/darwin/cocoapy/runtime.py", line 914, in __getattr__
+    def __getattr__(self, name):
+KeyboardInterrupt

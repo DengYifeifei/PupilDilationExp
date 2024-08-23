@@ -1,0 +1,21 @@
+9.9275 	INFO 	time is 2024-08-23 16:38:24,047959
+9.9660 	WARNING 	Monitor specification not found. Creating a temporary one...
+11.4695 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.4701 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa706c91070>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa706c93fd0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa706c93e20>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fa7049b2580>, multiSample=False, name='window1', numSamples=2, pos=(557, 325), screen=0, size=array([1300, 1000]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+11.4702 	EXP 	window1: backgroundImage = None
+11.4702 	EXP 	window1: backgroundFit = 'cover'
+11.4895 	WARNING 	t of last frame was 20.32ms (=1/49)
+11.4898 	INFO 	Mouse: using default window
+11.4904 	EXP 	window1: mouseVisible = False
+11.4905 	EXP 	window1: units = 'pix'
+11.4905 	INFO 	Mouse: using default window
+11.6126 	WARNING 	t of last frame was 123.11ms (=1/8)
+11.6514 	WARNING 	t of last frame was 38.83ms (=1/25)
+12.4213 	DATA 	Keypress: space
+12.4245 	WARNING 	t of last frame was 773.06ms (=1/1)
+12.4654 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+13.4927 	DATA 	Keypress: space
+13.9845 	DATA 	Keypress: space

@@ -1,0 +1,14 @@
+2024-08-23 16:47:24,315 [INFO]  starting up 24-08-23-1647_setting0 at 11.732236448995536
+2024-08-23 16:47:24,369 [INFO]  git SHA: c9de28b4abdb54d6f72023aae035dd87567c6062
+2024-08-23 16:47:24,370 [INFO]  setting file name: s0
+2024-08-23 16:47:24,372 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 16:47:25,945 [INFO]  Created window with size [1300 1000]
+2024-08-23 16:47:26,099 [INFO]  Using dummy triggers
+2024-08-23 16:47:26,099 [INFO]  begin intro_main
+2024-08-23 16:47:26,099 [DEBUG]  message: There's a couple of additional rules/info you need to know before starting the main phase of the experiment. (None)
+2024-08-23 16:47:29,454 [DEBUG]  message: You'll see 9 blocks in the main phase. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 16:47:32,181 [DEBUG]  message: Between the blocks, the chances of you seeing a particular cue or stimulus varies.  (None)
+2024-08-23 16:47:48,478 [DEBUG]  message: <<<>>>>>>> oooooooxxx 
+ This pattern indicates that you will see the left cue approximately 30% of the time, and hear one of the two stimuli approximately 70% of the time. (None)
+2024-08-23 16:48:15,091 [DEBUG]  message: Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :) (None)
+2024-08-23 16:48:18,204 [DEBUG]  message: Ready? Let go! (None)

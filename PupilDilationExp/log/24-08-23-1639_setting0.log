@@ -1,0 +1,22 @@
+2024-08-23 16:39:02,113 [INFO]  starting up 24-08-23-1639_setting0 at 11.06016190200171
+2024-08-23 16:39:02,166 [INFO]  git SHA: c9de28b4abdb54d6f72023aae035dd87567c6062
+2024-08-23 16:39:02,167 [INFO]  setting file name: s0
+2024-08-23 16:39:02,168 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 16:39:03,721 [INFO]  Created window with size [1300 1000]
+2024-08-23 16:39:03,867 [INFO]  Using dummy triggers
+2024-08-23 16:39:03,867 [INFO]  begin intro_main
+2024-08-23 16:39:03,867 [DEBUG]  message: There's a couple of additional rules/info you need to know before starting the main phase of the experiment. (None)
+2024-08-23 16:39:06,725 [DEBUG]  message: In the main phase, there will be 9 blocks. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 16:39:08,715 [DEBUG]  message: Between the blocks, the chances of you seeing a particular cue or stimulus varies.  (None)
+2024-08-23 16:39:10,301 [DEBUG]  message: For example, you may see a pattern as this. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli. (<<<>>>>>>>oooooooxxx)
+2024-08-23 16:39:20,761 [ERROR]  Caught exception in stage intro_main
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 461, in intro_main
+    self.message(msg = "For example, you may see a pattern as this. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli.", tip_text= example_cue_label+example_stim_label, space =True)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 267, in message
+    event.waitKeys(keyList=['space', KEY_CONTINUE])
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/event.py", line 529, in waitKeys
+    keys = getKeys(keyList=keyList, modifiers=modifiers,
+KeyboardInterrupt

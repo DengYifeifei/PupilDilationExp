@@ -85,10 +85,10 @@ def main(setting_number=None, name=None, test=False, fast=False, full=False, mou
     #     kws['block_length'] = 10
     exp = Experiment(setting_number, name, full_screen=(not test) or full, **kws)
     if test:
-        exp.welcome() 
-        exp.practice_intro()
-        exp.practice()
-        exp.setup_eyetracker(mouse)
+        #exp.welcome() 
+        #exp.practice_intro()
+        #exp.practice()
+        #exp.setup_eyetracker(mouse)
         exp.intro_main()
         exp.main()
         exp.save_data()

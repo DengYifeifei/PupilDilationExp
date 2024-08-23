@@ -391,14 +391,13 @@ class Experiment(object):
         while correct_proportion < self.training_pass_boundry:
             self.practice_i = 1
             correct_count = 0
-            for i in range(self.practice_blocklen - self.practice_i):
+            for i in range(self.practice_blocklen - self.practice_i + 1):
                 self.message(msg = f'complete {self.practice_blocklen - i} practice rounds to continue',
                             space=True)
                 self.hide_message()
                 trial = self.get_practice_trial(feedback = True)
                 trial.run()
-                if trial.correct_response == 1:
-                    correct_count += 1
+                correct_count += trial.correct
             correct_proportion = correct_count/self.practice_blocklen
             logging.info(f'correct proportion {correct_proportion}')
             if correct_proportion >= self.training_pass_boundry:
@@ -448,21 +447,22 @@ class Experiment(object):
 
     @stage
     def intro_main(self):
-        self.message(msg= "Alright! We're ready to begin the main phase of the experiment.", space=True)
+        self.message(msg= "There's a couple of additional rules/info you need to know before starting the main phase of the experiment.", space=True)
         self.hide_message()
 
-        self.message(msg = f"There will be {self.n_block} blocks. Each block inludes 30 trials, taking 4 minites maximum.", space=True)
+        self.message(msg = f"You'll see {self.n_block} blocks in the main phase. Each block inludes 30 trials, taking 4 minites maximum.", space=True)
         self.hide_message()
 
-        self.message(msg= "The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block. " 
+        self.message(msg= "Between the blocks, the chances of you seeing a particular cue or stimulus vary. " 
                      , space= True)
         self.hide_message()
         
-        example_lable = self.generate_block_label()
-        self.message(msg = "For example, you may see a pattern as below. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli.", tip_text=example_lable)
+        example_cue_label, example_stim_label = self.generate_block_label() 
+        self.message(msg = f"{example_cue_label+' '+example_stim_label} \nFor example! This pattern indicates that you will see the left cue approximately 30% of the time and hear one of the two stimuli approximately 70% of the time.", space=True)
+
         self.hide_message()
 
-        self.message(msg = "Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :)", space= True)
+        self.message(msg = "Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help the eyetracker get better measurements  :)", space= True)
         self.hide_message()
 
         self.message(msg= "Ready? Let go!", space= True)

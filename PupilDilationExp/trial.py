@@ -280,7 +280,6 @@ class Trial(object):
                 self.correct = 1
                 self.log('response', info = {'response':self.recieved_response[0],'performance':'Correct'})
             else:
-                self.correct = 0 
                 self.log('response', info = {'response':self.recieved_response[0],'performance':'Incorrect'})
 
         else:
