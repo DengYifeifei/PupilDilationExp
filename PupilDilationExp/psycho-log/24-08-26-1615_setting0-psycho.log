@@ -1,0 +1,26 @@
+11.9327 	INFO 	time is 2024-08-26 16:15:39,044453
+11.9724 	WARNING 	Monitor specification not found. Creating a temporary one...
+13.5734 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.5740 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fe433392ee0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fe433392e80>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fe433392cd0>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fe4308e6430>, multiSample=False, name='window1', numSamples=2, pos=(557, 325), screen=0, size=array([1300, 1000]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.5741 	EXP 	window1: backgroundImage = None
+13.5742 	EXP 	window1: backgroundFit = 'cover'
+13.5769 	INFO 	Mouse: using default window
+13.5773 	EXP 	window1: mouseVisible = False
+13.5773 	EXP 	window1: units = 'pix'
+13.5773 	INFO 	Mouse: using default window
+13.6847 	WARNING 	t of last frame was 107.84ms (=1/9)
+13.7211 	WARNING 	t of last frame was 36.42ms (=1/27)
+20.1492 	DATA 	Keypress: space
+20.1555 	WARNING 	t of last frame was 6434.34ms (=1/0)
+20.7054 	DATA 	Keypress: space
+20.7075 	WARNING 	t of last frame was 532.76ms (=1/1)
+21.2243 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+23.3339 	EXP 	Sound  reached end of file
+23.3340 	EXP 	Sound  started
+24.9544 	DATA 	Keypress: j
+29.7300 	EXP 	Sound  reached end of file
+29.7300 	EXP 	Sound  started
+30.6439 	DATA 	Keypress: f

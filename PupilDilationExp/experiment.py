@@ -127,7 +127,7 @@ class Experiment(object):
         self.win = self.setup_window()
         self.eyelink = MouseLink(self.win, self.id)  # use mouse by default
         self.win._heldDraw = []  # see hackfix
-        self.bonus = Bonus(1, 0) #'''?'''
+        self.bonus = Bonus(0.01, 0) #'''?'''
         self.total_score = 0
         self.disable_gaze_contingency = False
         default_conditions =  [0.3, 0.5, 0.9]
@@ -512,22 +512,20 @@ class Experiment(object):
         return None
 
 
-
     def run_test_trial(self, left_cue_probability, A_probability):
         trial = self.generate_trialstim(left_cue_probability, A_probability)
         prm = {**self.parameters, **trial}
-        trial = Trial(self.win, **prm, eyelink=self.eyelink)
+        trial = Trial(self.win, show_response=True, **prm, eyelink=self.eyelink)
         trial.run() 
         psychopy.logging.flush()
         self.main_data.append(trial.data)
 
-        logging.info('gt.status is %s', trial.status)
+        logging.info('trial.status is %s', trial.status)
         if trial.rt:
-            self.bonus.add_points(trial.correct*(3.0-trial.rt))  # bonus class 
+            self.bonus.add_points(trial.correct*(4.0-trial.rt))  # bonus class 
         logging.info('current bonus: %s', self.bonus.dollars())
-        # self.total_score += int(trial.score)
 
-        return core.getTime() - trial.start_time
+        return trial.status
 
     @stage
     def main(self, resume_block=None):
@@ -557,8 +555,12 @@ class Experiment(object):
                 try:
                     trial_count += 1
                     print(trial_count)
-                    self.run_test_trial(left_cue_probability, A_probability)
+                    trial_status = self.run_test_trial(left_cue_probability, A_probability)
                     logging.info('%d/%d', trial_count, self.block_length)
+
+                    if trial_status == 'abort':
+                        raise AbortKeyPressed
+                        
 
                 except Exception as e:
                     if isinstance(e, AbortKeyPressed):
@@ -577,8 +579,9 @@ class Experiment(object):
                         continue
                     elif 'r' in keys:
                         self.eyelink.calibrate()
-                    else:
-                        raise
+                    elif 'q' in keys:
+                        self.emergency_save_data()
+                        break
 
             # end while
             # block summary
@@ -628,6 +631,7 @@ class Experiment(object):
         with open(fp, 'w') as f:
             f.write(str(self.all_data))
         logging.info('wrote %s', fp)
+
 
 
 

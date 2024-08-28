@@ -1,0 +1,12 @@
+2024-08-26 15:42:03,110 [INFO]  starting up 24-08-26-1542_setting0 at 16.54710450602579
+2024-08-26 15:42:03,157 [INFO]  git SHA: a2a5c43fb29217d9d662423e1a729b55dd49a308
+2024-08-26 15:42:03,157 [INFO]  setting file name: s0
+2024-08-26 15:42:03,159 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-26 15:42:04,205 [INFO]  Created window with size [2880 1800]
+2024-08-26 15:42:04,339 [INFO]  Using dummy triggers
+2024-08-26 15:42:04,339 [INFO]  begin welcome
+2024-08-26 15:42:04,339 [INFO]  send trigger 4
+2024-08-26 15:42:04,341 [INFO]  start Welcome
+2024-08-26 15:42:04,341 [DEBUG]  message: Welcome to the experiment! (None)
+2024-08-26 15:42:40,979 [DEBUG]  message: During the test, you are going to receive a series of sound pairs coming from both the left and the right channels of your headset. (None)
+2024-08-26 15:42:47,422 [DEBUG]  message: Sometimes, the sounds are the same: (None)

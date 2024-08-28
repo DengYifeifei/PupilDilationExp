@@ -1,0 +1,17 @@
+11.6459 	INFO 	time is 2024-08-26 15:58:53,250988
+11.6792 	WARNING 	Monitor specification not found. Creating a temporary one...
+12.0616 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f7dcdc780a0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f7dcdc78040>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f7dcdc71e50>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f7dcbab25b0>, multiSample=False, name='window1', numSamples=2, pos=(557, 325), screen=0, size=array([1300, 1000]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.0617 	EXP 	window1: backgroundImage = None
+12.0617 	EXP 	window1: backgroundFit = 'cover'
+12.0630 	INFO 	Mouse: using default window
+12.0632 	EXP 	window1: mouseVisible = False
+12.0632 	EXP 	window1: units = 'pix'
+12.0632 	INFO 	Mouse: using default window
+28.6302 	DATA 	Keypress: space
+28.9715 	DATA 	Keypress: space
+31.5909 	EXP 	Sound  reached end of file
+31.5909 	EXP 	Sound  started
+32.6296 	DATA 	Keypress: j
+37.2718 	EXP 	Sound  reached end of file
+37.2718 	EXP 	Sound  started
+38.2920 	DATA 	Keypress: j

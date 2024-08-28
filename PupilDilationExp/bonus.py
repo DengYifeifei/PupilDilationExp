@@ -1,5 +1,6 @@
 import logging
 
+
 def num_string(n, noun, skip_one=True):
     if skip_one and n == 1:
         return noun
@@ -22,7 +23,7 @@ class Bonus(object):
         return self.points_per_cent > 0
 
     def add_points(self, points):
-        self.points += int(points)
+        self.points += int(points*100)/200
         logging.debug('add bonus points %s (total = %s)', points, self.points)
 
     def dollars(self):
@@ -40,4 +41,6 @@ class Bonus(object):
 
     def describe_scheme(self):
         return "one cent for every " + num_string(self.points_per_cent, "point")
+
+
 

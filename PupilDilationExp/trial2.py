@@ -31,7 +31,7 @@ class AbortKeyPressed(Exception): pass
 
 
 class Trial(object):
-    def __init__(self, win, pos=(0, 0), feedback = False, show_response = False, start_mode=None, 
+    def __init__(self, win, pos=(0, 0), feedback = False, start_mode=None, 
                  feedback_duration=3, action_time=2,
                  eyelink=None, triggers=None, **kws):
         self.win = win
@@ -64,7 +64,6 @@ class Trial(object):
 
         self.status = 'ok'
         self.start_time = self.done_time = None
-        self.show_response = show_response
         #self.disable_click = False
         
         self.correct = 0 #self.score = 0
@@ -161,6 +160,8 @@ class Trial(object):
 
 
 
+
+
         
     def fixation_cross(self, training_mode=False):
         
@@ -244,9 +245,9 @@ class Trial(object):
 
         self.log('initialize', {'status': self.status}) 
 
-        # if self.status in ('abort', 'recalibrate'):
-        #     self.log('done', {"status": self.status}) 
-        #     return self.status
+        if self.status in ('abort', 'recalibrate'):
+            self.log('done', {"status": self.status}) 
+            return self.status
 
         if self.eyelink:
             self.start_recording()
@@ -255,7 +256,7 @@ class Trial(object):
         self.start_time = core.getTime()
 
         self.fixation_cross() 
-        wait(self.fixation_duration) #wait(self.pre_trial_gap)
+        wait(self.pre_trial_gap)
         self.win.flip()
 
         self.cue()
@@ -274,15 +275,8 @@ class Trial(object):
         wait(0.5)
         self.log('start decision window')
         self.recieved_response = self.wait_keys(KEYS_CORRECT, time_limit=3.0)
-        show = str(self.recieved_response[0])
-        print(show)
 
         if self.recieved_response:
-            if self.show_response:
-                visual.TextStim(self.win, show, pos=self.pos, color='white', height=.05).draw()
-                self.win.flip()
-                wait(self.pre_trial_gap)
-                self.win.flip()
             self.response_time = core.getTime()
             self.rt = self.response_time - sound_onset
 
@@ -293,11 +287,6 @@ class Trial(object):
                 self.log('response', info = {'response':self.recieved_response[0],'performance':'Incorrect'})
 
         else:
-            if self.show_response:
-                visual.TextStim(self.win, 'No Response Recieved', pos=self.pos, color='white', height=.05).draw()
-                self.win.flip()
-                wait(self.pre_trial_gap)
-                self.win.flip()
             self.log('response', info = {'response':self.recieved_response,'performance':None})
         
 
@@ -311,15 +300,14 @@ class Trial(object):
     
         if self.eyelink:
             self.eyelink.stop_recording()
-
-        if not self.show_response:
-            wait(self.pre_trial_gap)
-       
+        
+    
+        #wait(self.pre_trial_gap)
+        
         self.win.flip()
 
         return self.status #为什么要return
     
-
     # class CalibrationTrial(GraphTrial):
     #     """docstring for CalibrationTrial"""
     #     all_failures = np.zeros(11)  # across separate runs ASSUME graph doesn't change

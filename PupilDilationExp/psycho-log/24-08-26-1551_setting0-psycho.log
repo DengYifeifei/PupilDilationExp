@@ -1,0 +1,36 @@
+11.3834 	INFO 	time is 2024-08-26 15:51:00,553775
+11.4212 	WARNING 	Monitor specification not found. Creating a temporary one...
+13.0343 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.0349 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb36d2a6190>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb36d2a6130>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb36d2a3f40>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fb36d6506a0>, multiSample=False, name='window1', numSamples=2, pos=(557, 325), screen=0, size=array([1300, 1000]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.0349 	EXP 	window1: backgroundImage = None
+13.0350 	EXP 	window1: backgroundFit = 'cover'
+13.0462 	INFO 	Mouse: using default window
+13.0467 	EXP 	window1: mouseVisible = False
+13.0468 	EXP 	window1: units = 'pix'
+13.0469 	INFO 	Mouse: using default window
+13.1694 	WARNING 	t of last frame was 123.39ms (=1/8)
+13.1918 	WARNING 	t of last frame was 22.42ms (=1/44)
+14.2980 	DATA 	Keypress: space
+14.3033 	WARNING 	t of last frame was 1111.43ms (=1/0)
+15.1492 	DATA 	Keypress: space
+15.1528 	WARNING 	t of last frame was 820.15ms (=1/1)
+15.6630 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+17.7773 	EXP 	Sound  reached end of file
+17.7773 	EXP 	Sound  started
+18.9945 	DATA 	Keypress: j
+23.0722 	EXP 	Sound  reached end of file
+23.0722 	EXP 	Sound  started
+23.8197 	DATA 	Keypress: f
+35.3516 	DATA 	Keypress: lcommand
+35.6271 	DATA 	Keypress: q
+37.3659 	DATA 	Mouse: Left button down, pos=(211,247)
+37.4654 	DATA 	Mouse:  Left button up, pos=(212,247)
+37.5471 	DATA 	Keypress: lcommand
+37.6964 	DATA 	Keypress: q
+39.3509 	DATA 	Keypress: lcommand
+40.0289 	DATA 	Keypress: lcommand
+40.1270 	DATA 	Keypress: q
+41.2466 	DATA 	Keypress: lctrl
