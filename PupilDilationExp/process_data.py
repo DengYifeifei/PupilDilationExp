@@ -5,7 +5,7 @@ import pandas as pd
 import subprocess
 
 from config import VERSION
-wid = '24-08-24-1606_setting0'# data/eyelink/24-08-24-1606_setting0
+wid = '24-09-29-1717_setting0'
 if len(sys.argv) > 1:
     VERSION = sys.argv[1]
 

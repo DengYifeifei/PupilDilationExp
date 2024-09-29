@@ -1,0 +1,42 @@
+2024-09-29 17:33:43,200 [INFO]  starting up 24-09-29-1733_setting0 at 2.1868632916739443
+2024-09-29 17:33:43,222 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-09-29 17:33:43,223 [INFO]  setting file name: s0
+2024-09-29 17:33:43,223 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-09-29 17:33:44,374 [INFO]  Created window with size [3840 2160]
+2024-09-29 17:33:44,518 [INFO]  Using dummy triggers
+2024-09-29 17:33:44,518 [INFO]  begin practice
+2024-09-29 17:33:44,518 [INFO]  start practice trials
+2024-09-29 17:33:44,518 [DEBUG]  message: complete 2 practice rounds to continue (None)
+2024-09-29 17:33:45,427 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": null, "stimA_condition": null, "response": null, "performance": null, "rt": null}
+2024-09-29 17:33:45,427 [DEBUG]  Trial.log 4.415 initialize status = ok
+2024-09-29 17:33:45,427 [DEBUG]  MouseLink message
+2024-09-29 17:33:45,427 [DEBUG]  Trial.log 4.415 start recording 
+2024-09-29 17:33:45,427 [DEBUG]  MouseLink message
+2024-09-29 17:33:45,427 [INFO]  MouseLink start_recording
+2024-09-29 17:33:45,427 [DEBUG]  Trial.log 4.415 start 
+2024-09-29 17:33:45,427 [DEBUG]  MouseLink message
+2024-09-29 17:33:45,430 [DEBUG]  Trial.log 4.417 show fixation 
+2024-09-29 17:33:45,430 [INFO]  send trigger 0
+2024-09-29 17:33:45,430 [DEBUG]  MouseLink message
+2024-09-29 17:33:45,936 [DEBUG]  Trial.log 4.923 show cue 
+2024-09-29 17:33:45,936 [INFO]  send trigger 1
+2024-09-29 17:33:45,936 [DEBUG]  MouseLink message
+2024-09-29 17:33:47,442 [DEBUG]  Trial.log 6.430 show fixation 
+2024-09-29 17:33:47,442 [INFO]  send trigger 0
+2024-09-29 17:33:47,443 [DEBUG]  MouseLink message
+2024-09-29 17:33:47,953 [DEBUG]  Trial.log 6.941 start sound 
+2024-09-29 17:33:47,953 [INFO]  send trigger 2
+2024-09-29 17:33:47,953 [DEBUG]  MouseLink message
+2024-09-29 17:33:48,453 [DEBUG]  Trial.log 7.441 start decision window 
+2024-09-29 17:33:48,454 [DEBUG]  MouseLink message
+2024-09-29 17:33:49,371 [DEBUG]  Trial.log 8.358 response 
+2024-09-29 17:33:49,371 [DEBUG]  MouseLink message
+2024-09-29 17:33:50,924 [DEBUG]  Trial.log 9.912 show feedback content = correct
+2024-09-29 17:33:50,925 [INFO]  send trigger 3
+2024-09-29 17:33:50,925 [DEBUG]  MouseLink message
+2024-09-29 17:33:52,117 [DEBUG]  Trial.log 11.104 done 
+2024-09-29 17:33:52,117 [INFO]  send trigger 4
+2024-09-29 17:33:52,117 [DEBUG]  MouseLink message
+2024-09-29 17:33:52,117 [INFO]  end trial [{"time": 4.414572000001499, "event": "initialize", "status": "ok"}, {"time": 4.414637041671085, "event": "start recording"}, {"time": 4.414704458336928, "event": "start"}, {"time": 4.416915000001609, "event": "show fixation"}, {"time": 4.923299916670658, "event": "show cue"}, {"time": 6.4296504166704835, "event": "show fixation"}, {"time": 6.940557166672079, "event": "start sound"}, {"time": 7.440717166675313, "event": "start decision window"}, {"time": 8.357851708336966, "event": "response"}, {"time": 9.911730125000759, "event": "show feedback", "content": "correct"}, {"time": 11.103932375001023, "event": "done"}]
+2024-09-29 17:33:52,117 [INFO]  MouseLink stop_recording
+2024-09-29 17:33:52,119 [DEBUG]  message: complete 1 practice rounds to continue (None)

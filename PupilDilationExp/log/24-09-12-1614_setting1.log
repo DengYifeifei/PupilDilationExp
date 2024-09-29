@@ -1,0 +1,10 @@
+2024-09-12 16:14:23,501 [INFO]  starting up 24-09-12-1614_setting1 at 2.2813540416609612
+2024-09-12 16:14:23,534 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-09-12 16:14:23,534 [INFO]  setting file name: s1
+2024-09-12 16:14:23,535 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['j', 'f'], 'combination_num': 8}
+2024-09-12 16:14:24,692 [INFO]  Created window with size [3840 2160]
+2024-09-12 16:14:24,899 [INFO]  Using dummy triggers
+2024-09-12 16:14:24,899 [INFO]  begin setup_eyetracker
+2024-09-12 16:14:24,899 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please look at the circles while they appear. (Please tell the experimenter)
+2024-09-12 16:14:35,436 [INFO]  New EyeLink object
+2024-09-12 16:14:35,436 [INFO]  Initializing new tracker

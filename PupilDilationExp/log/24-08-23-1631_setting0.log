@@ -1,0 +1,22 @@
+2024-08-23 16:31:04,641 [INFO]  starting up 24-08-23-1631_setting0 at 2.053453291533515
+2024-08-23 16:31:04,664 [INFO]  git SHA: c9de28b4abdb54d6f72023aae035dd87567c6062
+2024-08-23 16:31:04,664 [INFO]  setting file name: s0
+2024-08-23 16:31:04,665 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 16:31:05,822 [INFO]  Created window with size [3840 2160]
+2024-08-23 16:31:07,977 [INFO]  Using dummy triggers
+2024-08-23 16:31:07,977 [INFO]  begin practice
+2024-08-23 16:31:07,978 [INFO]  start practice trials
+2024-08-23 16:31:07,978 [DEBUG]  message: 2 practice trials left (None)
+2024-08-23 16:31:16,072 [INFO]  starting up 24-08-23-1631_setting0 at 1.824775583576411
+2024-08-23 16:31:16,109 [INFO]  git SHA: c9de28b4abdb54d6f72023aae035dd87567c6062
+2024-08-23 16:31:16,110 [INFO]  setting file name: s0
+2024-08-23 16:31:16,110 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 16:31:17,306 [INFO]  Created window with size [3840 2160]
+2024-08-23 16:31:17,897 [INFO]  Using dummy triggers
+2024-08-23 16:31:17,897 [INFO]  begin intro_main
+2024-08-23 16:31:17,897 [DEBUG]  message: Alright! We're ready to begin the main phase of the experiment. (None)
+2024-08-23 16:31:19,091 [DEBUG]  message: There will be 4 blocks. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 16:31:21,838 [DEBUG]  message: The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block.  (None)
+2024-08-23 16:31:23,839 [DEBUG]  message: For example, you may see a pattern as below. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli. (('<<<>>>>>>>', 'oooooooxxx'))
+2024-08-23 16:31:23,850 [DEBUG]  message: Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :) (None)
+2024-08-23 16:31:25,518 [DEBUG]  message: Ready? Let go! (None)

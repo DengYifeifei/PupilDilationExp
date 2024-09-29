@@ -1,0 +1,10 @@
+2024-08-23 16:55:45,019 [INFO]  starting up 24-08-23-1655_setting0 at 2.154253791552037
+2024-08-23 16:55:45,041 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-23 16:55:45,041 [INFO]  setting file name: s0
+2024-08-23 16:55:45,042 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 16:55:46,259 [INFO]  Created window with size [3840 2160]
+2024-08-23 16:55:46,818 [INFO]  Using dummy triggers
+2024-08-23 16:55:46,818 [INFO]  begin welcome
+2024-08-23 16:55:46,818 [INFO]  send trigger 4
+2024-08-23 16:55:46,818 [INFO]  start Welcome
+2024-08-23 16:55:46,819 [DEBUG]  message: Welcome to the experiment! (None)

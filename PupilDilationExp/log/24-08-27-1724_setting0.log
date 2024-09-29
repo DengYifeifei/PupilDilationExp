@@ -1,0 +1,8 @@
+2024-08-27 17:24:20,335 [INFO]  starting up 24-08-27-1724_setting0 at 2.0415166248567402
+2024-08-27 17:24:20,364 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-27 17:24:20,364 [INFO]  setting file name: s0
+2024-08-27 17:24:20,365 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-27 17:24:21,538 [INFO]  Created window with size [3840 2160]
+2024-08-27 17:24:21,719 [INFO]  Using dummy triggers
+2024-08-27 17:24:21,719 [INFO]  begin setup_eyetracker
+2024-08-27 17:24:21,720 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please tell the experimenter. (Wait for the experimenter)

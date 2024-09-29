@@ -395,7 +395,7 @@ class Experiment(object):
                 self.message(msg = f'complete {self.practice_blocklen - i} practice rounds to continue',
                             space=True)
                 self.hide_message()
-                trial = self.get_practice_trial(feedback = True)
+                trial = self.get_practice_trial(show_response = True, feedback = True)
                 trial.run()
                 correct_count += trial.correct
             correct_proportion = correct_count/self.practice_blocklen
@@ -415,8 +415,8 @@ class Experiment(object):
 
     @stage
     def setup_eyetracker(self, mouse=False):
-        self.message("Now we're going to calibrate the eyetracker. Please tell the experimenter.",
-            tip_text="Wait for the experimenter", space=True)
+        self.message("Now we're going to calibrate the eyetracker. Please look at the circles while they appear.",
+            tip_text="Please tell the experimenter", space=True)
         self.hide_message()
         if mouse:
             self.eyelink = MouseLink(self.win, self.id)
@@ -631,7 +631,3 @@ class Experiment(object):
         with open(fp, 'w') as f:
             f.write(str(self.all_data))
         logging.info('wrote %s', fp)
-
-
-
-

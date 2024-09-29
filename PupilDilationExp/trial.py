@@ -78,7 +78,10 @@ class Trial(object):
                 'stimulus': getattr(self, 'stimulus', None), 
                 'correct_response': getattr(self, 'correct_response', None),
                 'left_cue_condition': getattr(self, 'left_cue_condition', None),
-                'stimA_condition': getattr(self, 'stimA_condition', None)
+                'stimA_condition': getattr(self, 'stimA_condition', None),
+                'response': None,
+                'performance': None,
+                'rt': None
             },
             "events": [], # fixation, cue, balabala       
         }
@@ -274,23 +277,28 @@ class Trial(object):
         wait(0.5)
         self.log('start decision window')
         self.recieved_response = self.wait_keys(KEYS_CORRECT, time_limit=3.0)
-        show = str(self.recieved_response[0])
-        print(show)
+        # show = str(self.recieved_response[0])
+        # print(show)
 
         if self.recieved_response:
+            self.log('response')
+            show = str(self.recieved_response[0])
+            self.data['trial']['response'] = show
             if self.show_response:
+                show = str(self.recieved_response[0])
                 visual.TextStim(self.win, show, pos=self.pos, color='white', height=.05).draw()
                 self.win.flip()
                 wait(self.pre_trial_gap)
                 self.win.flip()
             self.response_time = core.getTime()
             self.rt = self.response_time - sound_onset
+            self.data['trial']['rt'] = self.rt
 
             if self.recieved_response[0] == self.correct_response:
-                self.correct = 1
-                self.log('response', info = {'response':self.recieved_response[0],'performance':'Correct'})
+                self.correct = 1 #needed for future bonus calculation
+                self.data['trial']['performance'] = 'Correct'
             else:
-                self.log('response', info = {'response':self.recieved_response[0],'performance':'Incorrect'})
+                self.data['trial']['performance'] = 'Incorrect'
 
         else:
             if self.show_response:
@@ -298,8 +306,8 @@ class Trial(object):
                 self.win.flip()
                 wait(self.pre_trial_gap)
                 self.win.flip()
-            self.log('response', info = {'response':self.recieved_response,'performance':None})
-        
+            self.log('response')
+            #self.data['trial']['response'] = self.recieved_response they are initialized as none
 
         if self.feedback:    
             self.feedback_time = core.getTime()

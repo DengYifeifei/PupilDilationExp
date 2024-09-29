@@ -1,0 +1,44 @@
+2024-08-24 16:22:44,786 [INFO]  starting up 24-08-24-1622_setting0 at 2.0986635414883494
+2024-08-24 16:22:44,813 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 16:22:44,813 [INFO]  setting file name: s0
+2024-08-24 16:22:44,814 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 16:22:45,982 [INFO]  Created window with size [3840 2160]
+2024-08-24 16:22:46,157 [INFO]  Using dummy triggers
+2024-08-24 16:22:46,157 [INFO]  begin main
+2024-08-24 16:22:46,157 [DEBUG]  message: Ready? Let go! (None)
+2024-08-24 16:22:46,912 [INFO]  Starting block 0: {'left_cue_condition': 0.5, 'stimA_condition': 0.5}
+2024-08-24 16:22:46,912 [INFO]  block 0 label:('<<<<<>>>>>', 'oooooxxxxx')
+2024-08-24 16:22:46,912 [DEBUG]  message: Block 1: 
+cue proportion <<<<<>>>>> 
+stimulus proportion oooooxxxxx (None)
+2024-08-24 16:22:47,771 [INFO]  begin trial {"cue_direction": "left", "stimulus": "B|A", "correct_response": "j", "left_cue_condition": 0.5, "stimA_condition": 0.5}
+2024-08-24 16:22:47,772 [DEBUG]  Trial.log 5.084 initialize status = ok
+2024-08-24 16:22:47,772 [DEBUG]  MouseLink message
+2024-08-24 16:22:47,772 [DEBUG]  Trial.log 5.084 start recording 
+2024-08-24 16:22:47,772 [DEBUG]  MouseLink message
+2024-08-24 16:22:47,772 [INFO]  MouseLink start_recording
+2024-08-24 16:22:47,772 [DEBUG]  Trial.log 5.084 start 
+2024-08-24 16:22:47,772 [DEBUG]  MouseLink message
+2024-08-24 16:22:47,773 [DEBUG]  Trial.log 5.086 show fixation 
+2024-08-24 16:22:47,773 [INFO]  send trigger 0
+2024-08-24 16:22:47,774 [DEBUG]  MouseLink message
+2024-08-24 16:22:48,279 [DEBUG]  Trial.log 5.592 show cue 
+2024-08-24 16:22:48,279 [INFO]  send trigger 1
+2024-08-24 16:22:48,279 [DEBUG]  MouseLink message
+2024-08-24 16:22:49,789 [DEBUG]  Trial.log 7.102 show fixation 
+2024-08-24 16:22:49,790 [INFO]  send trigger 0
+2024-08-24 16:22:49,790 [DEBUG]  MouseLink message
+2024-08-24 16:22:50,301 [DEBUG]  Trial.log 7.613 start sound 
+2024-08-24 16:22:50,301 [INFO]  send trigger 2
+2024-08-24 16:22:50,301 [DEBUG]  MouseLink message
+2024-08-24 16:22:50,801 [DEBUG]  Trial.log 8.113 start decision window 
+2024-08-24 16:22:50,801 [DEBUG]  MouseLink message
+2024-08-24 16:22:54,202 [ERROR]  Caught exception in main
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 560, in main
+    self.run_test_trial(left_cue_probability, A_probability)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 520, in run_test_trial
+    trial.run()
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/trial.py", line 281, in run
+    wait(self.pre_trial_gap)()
+TypeError: 'NoneType' object is not callable

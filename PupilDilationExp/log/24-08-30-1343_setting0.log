@@ -1,0 +1,36 @@
+2024-08-30 13:43:44,020 [INFO]  starting up 24-08-30-1343_setting0 at 7.609783541411161
+2024-08-30 13:43:44,051 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-30 13:43:44,052 [INFO]  setting file name: s0
+2024-08-30 13:43:44,052 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-30 13:43:45,273 [INFO]  Created window with size [3840 2160]
+2024-08-30 13:43:45,529 [INFO]  Using dummy triggers
+2024-08-30 13:43:45,529 [INFO]  begin main
+2024-08-30 13:43:45,529 [DEBUG]  message: Ready? Let go! (None)
+2024-08-30 13:43:46,766 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.5}
+2024-08-30 13:43:46,766 [INFO]  block 0 label:('<<<>>>>>>>', 'oooooxxxxx')
+2024-08-30 13:43:46,766 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooooxxxxx (None)
+2024-08-30 13:43:47,610 [INFO]  begin trial {"cue_direction": "right", "stimulus": "A|A", "correct_response": "f", "left_cue_condition": 0.3, "stimA_condition": 0.5}
+2024-08-30 13:43:47,610 [DEBUG]  Trial.log 11.200 initialize status = ok
+2024-08-30 13:43:47,610 [DEBUG]  MouseLink message
+2024-08-30 13:43:47,610 [DEBUG]  Trial.log 11.200 start recording 
+2024-08-30 13:43:47,610 [DEBUG]  MouseLink message
+2024-08-30 13:43:47,610 [INFO]  MouseLink start_recording
+2024-08-30 13:43:47,610 [DEBUG]  Trial.log 11.201 start 
+2024-08-30 13:43:47,610 [DEBUG]  MouseLink message
+2024-08-30 13:43:47,614 [DEBUG]  Trial.log 11.204 show fixation 
+2024-08-30 13:43:47,614 [INFO]  send trigger 0
+2024-08-30 13:43:47,614 [DEBUG]  MouseLink message
+2024-08-30 13:43:48,120 [DEBUG]  Trial.log 11.710 show cue 
+2024-08-30 13:43:48,120 [INFO]  send trigger 1
+2024-08-30 13:43:48,120 [DEBUG]  MouseLink message
+2024-08-30 13:43:49,630 [DEBUG]  Trial.log 13.220 show fixation 
+2024-08-30 13:43:49,630 [INFO]  send trigger 0
+2024-08-30 13:43:49,630 [DEBUG]  MouseLink message
+2024-08-30 13:43:50,140 [DEBUG]  Trial.log 13.730 start sound 
+2024-08-30 13:43:50,140 [INFO]  send trigger 2
+2024-08-30 13:43:50,140 [DEBUG]  MouseLink message
+2024-08-30 13:43:50,640 [DEBUG]  Trial.log 14.230 start decision window 
+2024-08-30 13:43:50,640 [DEBUG]  MouseLink message
+2024-08-30 13:43:51,374 [WARNING]  Abort key pressed

@@ -1,0 +1,18 @@
+2024-09-29 17:31:56,687 [INFO]  starting up 24-09-29-1731_setting0 at 1.8916882916673785
+2024-09-29 17:31:56,713 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-09-29 17:31:56,713 [INFO]  setting file name: s0
+2024-09-29 17:31:56,714 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-09-29 17:31:57,857 [INFO]  Created window with size [3840 2160]
+2024-09-29 17:31:57,995 [INFO]  Using dummy triggers
+2024-09-29 17:31:57,995 [INFO]  begin practice
+2024-09-29 17:31:57,995 [INFO]  start practice trials
+2024-09-29 17:31:57,995 [DEBUG]  message: complete 2 practice rounds to continue (None)
+2024-09-29 17:31:58,699 [ERROR]  Caught exception in stage practice
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 398, in practice
+    trial = self.get_practice_trial(feedback = True)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 179, in get_practice_trial
+    trial = Trial(self.win, feedback = True, **prm) #gt = GraphTrial(self.win, **prm)
+TypeError: type object got multiple values for keyword argument 'feedback'

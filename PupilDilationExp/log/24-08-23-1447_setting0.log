@@ -1,0 +1,36 @@
+2024-08-23 14:47:38,499 [INFO]  starting up 24-08-23-1447_setting0 at 1.9813259583897889
+2024-08-23 14:47:38,522 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 14:47:38,522 [INFO]  setting file name: s0
+2024-08-23 14:47:38,522 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 14:47:39,685 [INFO]  Created window with size [3840 2160]
+2024-08-23 14:47:39,834 [INFO]  Using dummy triggers
+2024-08-23 14:47:39,834 [INFO]  begin intro_main
+2024-08-23 14:47:39,835 [DEBUG]  message: Alright! We're ready to begin the main phase of the experiment. (None)
+2024-08-23 14:47:41,190 [DEBUG]  message: There will be 4 blocks. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 14:47:44,176 [DEBUG]  message: The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block.  (None)
+2024-08-23 14:47:50,893 [DEBUG]  message: For example, you may see a pattern as below. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli. (('<<<>>>>>>>', 'oooooooxxx'))
+2024-08-23 14:47:50,916 [DEBUG]  message: Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :) (None)
+2024-08-23 14:47:52,212 [DEBUG]  message: Ready? Let go! (None)
+2024-08-23 14:47:53,101 [INFO]  begin main
+2024-08-23 14:47:53,101 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.3}
+2024-08-23 14:47:53,101 [INFO]  block 0 label:('<<<>>>>>>>', 'oooxxxxxxx')
+2024-08-23 14:47:53,101 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooxxxxxxx (None)
+2024-08-23 14:47:54,278 [INFO]  begin trial {"cue_direction": "right", "stimulus": "B|B", "correct_response": "j", "left_cue_condition": null, "stimA_condition": null}
+2024-08-23 14:47:54,278 [DEBUG]  Trial.log 17.760 initialize status = ok
+2024-08-23 14:47:54,278 [DEBUG]  MouseLink message
+2024-08-23 14:47:54,278 [DEBUG]  Trial.log 17.760 start recording 
+2024-08-23 14:47:54,278 [DEBUG]  MouseLink message
+2024-08-23 14:47:54,278 [INFO]  MouseLink start_recording
+2024-08-23 14:47:54,278 [DEBUG]  Trial.log 17.760 start 
+2024-08-23 14:47:54,278 [DEBUG]  MouseLink message
+2024-08-23 14:47:54,281 [DEBUG]  Trial.log 17.763 show fixation 
+2024-08-23 14:47:54,281 [INFO]  send trigger 0
+2024-08-23 14:47:54,281 [DEBUG]  MouseLink message
+2024-08-23 14:47:56,275 [DEBUG]  Trial.log 19.757 show cue 
+2024-08-23 14:47:56,275 [INFO]  send trigger 1
+2024-08-23 14:47:56,275 [DEBUG]  MouseLink message
+2024-08-23 14:47:57,781 [DEBUG]  Trial.log 21.263 show fixation 
+2024-08-23 14:47:57,781 [INFO]  send trigger 0
+2024-08-23 14:47:57,781 [DEBUG]  MouseLink message

@@ -1,0 +1,36 @@
+2024-09-12 16:40:25,801 [INFO]  starting up 24-09-12-1640_setting1 at 1.869912499999998
+2024-09-12 16:40:25,823 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-09-12 16:40:25,823 [INFO]  setting file name: s1
+2024-09-12 16:40:25,824 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['j', 'f'], 'combination_num': 8}
+2024-09-12 16:40:26,975 [INFO]  Created window with size [3840 2160]
+2024-09-12 16:40:27,238 [INFO]  Using dummy triggers
+2024-09-12 16:40:27,238 [INFO]  begin setup_eyetracker
+2024-09-12 16:40:27,238 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please look at the circles while they appear. (Please tell the experimenter)
+2024-09-12 16:40:28,825 [INFO]  New EyeLink object
+2024-09-12 16:40:28,825 [INFO]  Initializing new tracker
+2024-09-12 16:40:29,133 [DEBUG]  EyeLink.message Set up calibration
+2024-09-12 16:40:29,164 [INFO]  Tracker initialized
+2024-09-12 16:40:29,164 [DEBUG]  EyeLink.message Set up calibration
+2024-09-12 16:40:29,188 [INFO]  doTrackerSetup
+2024-09-12 16:42:38,118 [INFO]  done doTrackerSetup
+2024-09-12 16:42:38,141 [INFO]  begin main
+2024-09-12 16:42:38,142 [DEBUG]  message: Ready? Let go! (None)
+2024-09-12 16:42:52,359 [INFO]  Starting block 0: {'left_cue_condition': 0.5, 'stimA_condition': 0.3}
+2024-09-12 16:42:52,359 [INFO]  block 0 label:('<<<<<>>>>>', 'oooxxxxxxx')
+2024-09-12 16:42:52,359 [DEBUG]  message: Block 1: 
+cue proportion <<<<<>>>>> 
+stimulus proportion oooxxxxxxx (None)
+2024-09-12 16:43:06,837 [INFO]  begin trial {"cue_direction": "right", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": 0.5, "stimA_condition": 0.3}
+2024-09-12 16:43:06,837 [DEBUG]  Trial.log 162.906 initialize status = ok
+2024-09-12 16:43:06,837 [DEBUG]  Trial.log 162.906 start recording 
+2024-09-12 16:43:06,837 [INFO]  start_recording
+2024-09-12 16:43:06,962 [DEBUG]  Trial.log 163.031 start 
+2024-09-12 16:43:06,966 [DEBUG]  Trial.log 163.035 show fixation 
+2024-09-12 16:43:06,966 [INFO]  send trigger 0
+2024-09-12 16:43:07,472 [DEBUG]  Trial.log 163.541 show cue 
+2024-09-12 16:43:07,472 [INFO]  send trigger 1
+2024-09-12 16:43:08,978 [DEBUG]  Trial.log 165.047 show fixation 
+2024-09-12 16:43:08,978 [INFO]  send trigger 0
+2024-09-12 16:43:09,490 [DEBUG]  Trial.log 165.559 start sound 
+2024-09-12 16:43:09,490 [INFO]  send trigger 2
+2024-09-12 16:43:09,990 [DEBUG]  Trial.log 166.059 start decision window 

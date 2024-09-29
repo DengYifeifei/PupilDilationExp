@@ -12,7 +12,6 @@ LABEL_SELECT = 'Key J'
 LABEL_SWITCH = 'Key F'
 
 
-
 SOUND_PATH = {
     'A|A': './stim/G|G.mp3',
     'A|B': './stim/G|P.mp3',

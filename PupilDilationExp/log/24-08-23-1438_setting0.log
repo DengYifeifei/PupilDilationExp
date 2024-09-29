@@ -1,0 +1,58 @@
+2024-08-23 14:38:25,588 [INFO]  starting up 24-08-23-1438_setting0 at 1.7788653750903904
+2024-08-23 14:38:25,619 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 14:38:25,619 [INFO]  setting file name: s0
+2024-08-23 14:38:25,619 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 14:38:26,805 [INFO]  Created window with size [3840 2160]
+2024-08-23 14:38:27,359 [INFO]  Using dummy triggers
+2024-08-23 14:38:27,359 [INFO]  begin setup_eyetracker
+2024-08-23 14:38:27,359 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please tell the experimenter. (Wait for the experimenter (space))
+2024-08-23 14:38:28,966 [INFO]  New EyeLink object
+2024-08-23 14:38:28,966 [INFO]  Initializing new tracker
+2024-08-23 14:38:29,251 [DEBUG]  EyeLink.message Set up calibration
+2024-08-23 14:38:29,268 [INFO]  Tracker initialized
+2024-08-23 14:38:29,268 [DEBUG]  EyeLink.message Set up calibration
+2024-08-23 14:38:29,286 [INFO]  doTrackerSetup
+2024-08-23 14:38:55,731 [INFO]  done doTrackerSetup
+2024-08-23 14:38:55,768 [INFO]  begin intro_main
+2024-08-23 14:38:55,769 [DEBUG]  message: Alright! We're ready to begin the main phase of the experiment. (None)
+2024-08-23 14:38:56,530 [DEBUG]  message: There will be 4 blocks. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 14:38:59,140 [DEBUG]  message: The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block.  (None)
+2024-08-23 14:39:28,997 [DEBUG]  message: For example, you may see a pattern as below. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli. (('<<<>>>>>>>', 'oooooooxxx'))
+2024-08-23 14:39:29,018 [DEBUG]  message: Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :) (None)
+2024-08-23 14:39:34,660 [DEBUG]  message: Ready? Let go! (None)
+2024-08-23 14:39:35,250 [INFO]  begin main
+2024-08-23 14:39:35,250 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.5}
+2024-08-23 14:39:35,250 [INFO]  block 0 label:('<<<>>>>>>>', 'oooooxxxxx')
+2024-08-23 14:39:35,251 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooooxxxxx (None)
+2024-08-23 14:40:31,889 [ERROR]  Caught exception in stage main
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 552, in main
+    while trial_count < self.block_length:
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+2024-08-23 14:40:34,905 [WARNING]  Retrying main
+2024-08-23 14:40:34,905 [INFO]  begin main
+2024-08-23 14:40:34,905 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.5}
+2024-08-23 14:40:34,905 [INFO]  block 0 label:('<<<>>>>>>>', 'oooooxxxxx')
+2024-08-23 14:40:34,905 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooooxxxxx (None)
+2024-08-23 14:40:40,076 [ERROR]  Caught exception in stage main
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 552, in main
+    while trial_count < self.block_length:
+TypeError: '<' not supported between instances of 'int' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 552, in main
+    while trial_count < self.block_length:
+TypeError: '<' not supported between instances of 'int' and 'NoneType'

@@ -1,0 +1,31 @@
+2024-08-24 16:02:40,478 [INFO]  starting up 24-08-24-1602_setting0 at 2.065773250069469
+2024-08-24 16:02:40,510 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 16:02:40,510 [INFO]  setting file name: s0
+2024-08-24 16:02:40,510 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 16:02:41,664 [INFO]  Created window with size [3840 2160]
+2024-08-24 16:02:42,174 [INFO]  Using dummy triggers
+2024-08-24 16:02:42,175 [INFO]  begin practice
+2024-08-24 16:02:42,175 [INFO]  start practice trials
+2024-08-24 16:02:42,175 [DEBUG]  message: complete 2 practice rounds to continue (None)
+2024-08-24 16:02:43,323 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": null, "stimA_condition": null}
+2024-08-24 16:02:43,323 [DEBUG]  Trial.log 4.911 initialize status = ok
+2024-08-24 16:02:43,323 [DEBUG]  MouseLink message
+2024-08-24 16:02:43,323 [DEBUG]  Trial.log 4.911 start recording 
+2024-08-24 16:02:43,323 [DEBUG]  MouseLink message
+2024-08-24 16:02:43,323 [INFO]  MouseLink start_recording
+2024-08-24 16:02:43,323 [DEBUG]  Trial.log 4.911 start 
+2024-08-24 16:02:43,323 [DEBUG]  MouseLink message
+2024-08-24 16:02:43,325 [DEBUG]  Trial.log 4.912 show fixation 
+2024-08-24 16:02:43,325 [INFO]  send trigger 0
+2024-08-24 16:02:43,325 [DEBUG]  MouseLink message
+2024-08-24 16:02:45,322 [DEBUG]  Trial.log 6.909 show cue 
+2024-08-24 16:02:45,322 [INFO]  send trigger 1
+2024-08-24 16:02:45,322 [DEBUG]  MouseLink message
+2024-08-24 16:02:46,828 [DEBUG]  Trial.log 8.416 show fixation 
+2024-08-24 16:02:46,828 [INFO]  send trigger 0
+2024-08-24 16:02:46,828 [DEBUG]  MouseLink message
+2024-08-24 16:02:47,343 [DEBUG]  Trial.log 8.930 start sound 
+2024-08-24 16:02:47,343 [INFO]  send trigger 2
+2024-08-24 16:02:47,343 [DEBUG]  MouseLink message
+2024-08-24 16:02:47,843 [DEBUG]  Trial.log 9.430 start decision window 
+2024-08-24 16:02:47,843 [DEBUG]  MouseLink message

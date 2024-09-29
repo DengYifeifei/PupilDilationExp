@@ -1,0 +1,51 @@
+2024-08-23 15:09:16,967 [INFO]  starting up 24-08-23-1509_setting0 at 2.132505458081141
+2024-08-23 15:09:16,995 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 15:09:16,995 [INFO]  setting file name: s0
+2024-08-23 15:09:16,995 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 15:09:18,182 [INFO]  Created window with size [3840 2160]
+2024-08-23 15:09:18,395 [INFO]  Using dummy triggers
+2024-08-23 15:09:18,395 [INFO]  begin intro_main
+2024-08-23 15:09:18,395 [DEBUG]  message: Alright! We're ready to begin the main phase of the experiment. (None)
+2024-08-23 15:09:19,307 [DEBUG]  message: There will be 4 blocks. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 15:09:19,616 [DEBUG]  message: The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block.  (None)
+2024-08-23 15:09:46,532 [INFO]  starting up 24-08-23-1509_setting0 at 2.009040875127539
+2024-08-23 15:09:46,562 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 15:09:46,563 [INFO]  setting file name: s0
+2024-08-23 15:09:46,563 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 15:09:47,715 [INFO]  Created window with size [3840 2160]
+2024-08-23 15:09:48,172 [INFO]  Using dummy triggers
+2024-08-23 15:09:48,172 [INFO]  begin intro_main
+2024-08-23 15:09:48,172 [DEBUG]  message: Alright! We're ready to begin the main phase of the experiment. (None)
+2024-08-23 15:09:49,011 [DEBUG]  message: There will be 4 blocks. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 15:09:50,567 [DEBUG]  message: The blocks are all slightly different, because we changes the chances of showing a specific cue and sound stimulus between blocks. We will let you know the chances before starting each block.  (None)
+2024-08-23 15:09:52,698 [DEBUG]  message: For example, you may see a pattern as below. The left part indicates how often you will see a specific cue and the right part indicates how often you'll see a specific stimuli. (('<<<>>>>>>>', 'oooooooxxx'))
+2024-08-23 15:09:52,729 [DEBUG]  message: Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help us get better measurements :) (None)
+2024-08-23 15:09:53,020 [DEBUG]  message: Ready? Let go! (None)
+2024-08-23 15:09:53,350 [INFO]  begin main
+2024-08-23 15:09:53,350 [INFO]  Starting block 0: {'left_cue_condition': 0.9, 'stimA_condition': 0.9}
+2024-08-23 15:09:53,350 [INFO]  block 0 label:('<<<<<<<<<>', 'ooooooooox')
+2024-08-23 15:09:53,350 [DEBUG]  message: Block 1: 
+cue proportion <<<<<<<<<> 
+stimulus proportion ooooooooox (None)
+2024-08-23 15:09:53,839 [INFO]  begin trial {"cue_direction": null, "stimulus": null, "correct_response": null, "left_cue_condition": 0.9, "stimA_condition": 0.9}
+2024-08-23 15:09:53,839 [DEBUG]  Trial.log 9.317 initialize status = ok
+2024-08-23 15:09:53,839 [DEBUG]  MouseLink message
+2024-08-23 15:09:53,839 [DEBUG]  Trial.log 9.317 start recording 
+2024-08-23 15:09:53,839 [DEBUG]  MouseLink message
+2024-08-23 15:09:53,839 [INFO]  MouseLink start_recording
+2024-08-23 15:09:53,839 [DEBUG]  Trial.log 9.317 start 
+2024-08-23 15:09:53,839 [DEBUG]  MouseLink message
+2024-08-23 15:09:53,842 [DEBUG]  Trial.log 9.320 show fixation 
+2024-08-23 15:09:53,842 [INFO]  send trigger 0
+2024-08-23 15:09:53,842 [DEBUG]  MouseLink message
+2024-08-23 15:09:55,397 [ERROR]  Caught exception in main
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 559, in main
+    self.run_test_trial(left_cue_probability, A_probability)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 523, in run_test_trial
+    trial.run()
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/trial.py", line 260, in run
+    self.cue()
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/trial.py", line 183, in cue
+    if self.cue_direction == 'left':
+AttributeError: 'Trial' object has no attribute 'cue_direction'

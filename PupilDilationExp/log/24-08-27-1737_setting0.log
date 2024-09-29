@@ -1,0 +1,122 @@
+2024-08-27 17:37:12,463 [INFO]  starting up 24-08-27-1737_setting0 at 2.2200501249171793
+2024-08-27 17:37:12,486 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-27 17:37:12,487 [INFO]  setting file name: s0
+2024-08-27 17:37:12,487 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-27 17:37:13,677 [INFO]  Created window with size [3840 2160]
+2024-08-27 17:37:13,917 [INFO]  Using dummy triggers
+2024-08-27 17:37:13,917 [INFO]  begin setup_eyetracker
+2024-08-27 17:37:13,918 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please tell the experimenter. (Wait for the experimenter)
+2024-08-27 17:37:16,701 [INFO]  New EyeLink object
+2024-08-27 17:37:16,702 [INFO]  Initializing new tracker
+2024-08-27 17:37:16,951 [DEBUG]  EyeLink.message Set up calibration
+2024-08-27 17:37:16,981 [INFO]  Tracker initialized
+2024-08-27 17:37:16,981 [DEBUG]  EyeLink.message Set up calibration
+2024-08-27 17:37:17,002 [INFO]  doTrackerSetup
+2024-08-27 17:37:51,342 [INFO]  done doTrackerSetup
+2024-08-27 17:37:51,376 [INFO]  begin main
+2024-08-27 17:37:51,377 [DEBUG]  message: Ready? Let go! (None)
+2024-08-27 17:37:55,021 [INFO]  Starting block 0: {'left_cue_condition': 0.5, 'stimA_condition': 0.3}
+2024-08-27 17:37:55,021 [INFO]  block 0 label:('<<<<<>>>>>', 'oooxxxxxxx')
+2024-08-27 17:37:55,021 [DEBUG]  message: Block 1: 
+cue proportion <<<<<>>>>> 
+stimulus proportion oooxxxxxxx (None)
+2024-08-27 17:37:55,753 [INFO]  begin trial {"cue_direction": "right", "stimulus": "B|A", "correct_response": "f", "left_cue_condition": 0.5, "stimA_condition": 0.3}
+2024-08-27 17:37:55,753 [DEBUG]  Trial.log 45.511 initialize status = ok
+2024-08-27 17:37:55,753 [DEBUG]  Trial.log 45.511 start recording 
+2024-08-27 17:37:55,753 [INFO]  start_recording
+2024-08-27 17:37:55,878 [DEBUG]  Trial.log 45.636 start 
+2024-08-27 17:37:55,884 [DEBUG]  Trial.log 45.642 show fixation 
+2024-08-27 17:37:55,884 [INFO]  send trigger 0
+2024-08-27 17:37:56,390 [DEBUG]  Trial.log 46.148 show cue 
+2024-08-27 17:37:56,390 [INFO]  send trigger 1
+2024-08-27 17:37:57,896 [DEBUG]  Trial.log 47.654 show fixation 
+2024-08-27 17:37:57,896 [INFO]  send trigger 0
+2024-08-27 17:37:58,408 [DEBUG]  Trial.log 48.166 start sound 
+2024-08-27 17:37:58,408 [INFO]  send trigger 2
+2024-08-27 17:37:58,908 [DEBUG]  Trial.log 48.666 start decision window 
+2024-08-27 17:38:02,045 [DEBUG]  Trial.log 51.803 response response = f, performance = Correct
+2024-08-27 17:38:02,045 [DEBUG]  Trial.log 51.803 done 
+2024-08-27 17:38:02,045 [INFO]  send trigger 4
+2024-08-27 17:38:02,046 [INFO]  end trial [{"time": 45.51071441639215, "event": "initialize", "status": "ok"}, {"time": 45.51079716649838, "event": "start recording"}, {"time": 45.63593529141508, "event": "start"}, {"time": 45.64155179145746, "event": "show fixation"}, {"time": 46.14784637489356, "event": "show cue"}, {"time": 47.65387300006114, "event": "show fixation"}, {"time": 48.16585425008088, "event": "start sound"}, {"time": 48.666020333301276, "event": "start decision window"}, {"time": 51.80303816637024, "event": "response", "response": "f", "performance": "Correct"}, {"time": 51.803172499872744, "event": "done"}]
+2024-08-27 17:38:02,046 [INFO]  stop_recording
+2024-08-27 17:38:02,066 [INFO]  gt.status is ok
+2024-08-27 17:38:02,066 [DEBUG]  add bonus points 0.36297137499786913 (total = 0.18)
+2024-08-27 17:38:02,066 [INFO]  current bonus: 0.18
+2024-08-27 17:38:02,066 [INFO]  1/2
+2024-08-27 17:38:02,066 [INFO]  begin trial {"cue_direction": "right", "stimulus": "B|A", "correct_response": "f", "left_cue_condition": 0.5, "stimA_condition": 0.3}
+2024-08-27 17:38:02,066 [DEBUG]  Trial.log 51.824 initialize status = ok
+2024-08-27 17:38:02,067 [DEBUG]  Trial.log 51.824 start recording 
+2024-08-27 17:38:02,067 [INFO]  start_recording
+2024-08-27 17:38:02,192 [DEBUG]  Trial.log 51.950 start 
+2024-08-27 17:38:02,195 [DEBUG]  Trial.log 51.953 show fixation 
+2024-08-27 17:38:02,195 [INFO]  send trigger 0
+2024-08-27 17:38:02,702 [DEBUG]  Trial.log 52.460 show cue 
+2024-08-27 17:38:02,702 [INFO]  send trigger 1
+2024-08-27 17:38:04,209 [DEBUG]  Trial.log 53.967 show fixation 
+2024-08-27 17:38:04,209 [INFO]  send trigger 0
+2024-08-27 17:38:04,719 [DEBUG]  Trial.log 54.477 start sound 
+2024-08-27 17:38:04,719 [INFO]  send trigger 2
+2024-08-27 17:38:05,219 [DEBUG]  Trial.log 54.977 start decision window 
+2024-08-27 17:38:07,218 [DEBUG]  Trial.log 56.976 response response = f, performance = Correct
+2024-08-27 17:38:07,218 [DEBUG]  Trial.log 56.976 done 
+2024-08-27 17:38:07,218 [INFO]  send trigger 4
+2024-08-27 17:38:07,218 [INFO]  end trial [{"time": 51.82421604148112, "event": "initialize", "status": "ok"}, {"time": 51.82426050002687, "event": "start recording"}, {"time": 51.95010787504725, "event": "start"}, {"time": 51.952507874928415, "event": "show fixation"}, {"time": 52.45984737505205, "event": "show cue"}, {"time": 53.96663516643457, "event": "show fixation"}, {"time": 54.47666912502609, "event": "start sound"}, {"time": 54.97683249996044, "event": "start decision window"}, {"time": 56.97556637506932, "event": "response", "response": "f", "performance": "Correct"}, {"time": 56.97565970825963, "event": "done"}]
+2024-08-27 17:38:07,218 [INFO]  stop_recording
+2024-08-27 17:38:07,237 [INFO]  gt.status is ok
+2024-08-27 17:38:07,237 [DEBUG]  add bonus points 1.5012482914607972 (total = 0.9299999999999999)
+2024-08-27 17:38:07,237 [INFO]  current bonus: 0.93
+2024-08-27 17:38:07,237 [INFO]  2/2
+2024-08-27 17:38:13,599 [INFO]  doTrackerSetup
+2024-08-27 17:38:47,766 [INFO]  done doTrackerSetup
+2024-08-27 17:38:47,790 [INFO]  Starting block 1: {'left_cue_condition': 0.3, 'stimA_condition': 0.5}
+2024-08-27 17:38:47,791 [INFO]  block 1 label:('<<<>>>>>>>', 'oooooxxxxx')
+2024-08-27 17:38:47,791 [DEBUG]  message: Block 2: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooooxxxxx (None)
+2024-08-27 17:38:48,491 [INFO]  begin trial {"cue_direction": "right", "stimulus": "A|B", "correct_response": "j", "left_cue_condition": 0.3, "stimA_condition": 0.5}
+2024-08-27 17:38:48,492 [DEBUG]  Trial.log 98.250 initialize status = ok
+2024-08-27 17:38:48,492 [DEBUG]  Trial.log 98.250 start recording 
+2024-08-27 17:38:48,492 [INFO]  start_recording
+2024-08-27 17:38:48,617 [DEBUG]  Trial.log 98.375 start 
+2024-08-27 17:38:48,620 [DEBUG]  Trial.log 98.378 show fixation 
+2024-08-27 17:38:48,620 [INFO]  send trigger 0
+2024-08-27 17:38:49,125 [DEBUG]  Trial.log 98.884 show cue 
+2024-08-27 17:38:49,125 [INFO]  send trigger 1
+2024-08-27 17:38:50,633 [DEBUG]  Trial.log 100.391 show fixation 
+2024-08-27 17:38:50,633 [INFO]  send trigger 0
+2024-08-27 17:38:51,143 [DEBUG]  Trial.log 100.901 start sound 
+2024-08-27 17:38:51,143 [INFO]  send trigger 2
+2024-08-27 17:38:51,643 [DEBUG]  Trial.log 101.401 start decision window 
+2024-08-27 17:38:54,162 [DEBUG]  Trial.log 103.920 response response = f, performance = Incorrect
+2024-08-27 17:38:54,162 [DEBUG]  Trial.log 103.921 done 
+2024-08-27 17:38:54,162 [INFO]  send trigger 4
+2024-08-27 17:38:54,162 [INFO]  end trial [{"time": 98.24981966638006, "event": "initialize", "status": "ok"}, {"time": 98.24989404156804, "event": "start recording"}, {"time": 98.3748134165071, "event": "start"}, {"time": 98.3778547081165, "event": "show fixation"}, {"time": 98.88365733320825, "event": "show cue"}, {"time": 100.39147054147907, "event": "show fixation"}, {"time": 100.9010870414786, "event": "start sound"}, {"time": 101.40125837503001, "event": "start decision window"}, {"time": 103.92042995826341, "event": "response", "response": "f", "performance": "Incorrect"}, {"time": 103.92056383332238, "event": "done"}]
+2024-08-27 17:38:54,162 [INFO]  stop_recording
+2024-08-27 17:38:54,181 [INFO]  gt.status is ok
+2024-08-27 17:38:54,181 [DEBUG]  add bonus points 0.0 (total = 0.9299999999999999)
+2024-08-27 17:38:54,181 [INFO]  current bonus: 0.93
+2024-08-27 17:38:54,181 [INFO]  1/2
+2024-08-27 17:38:54,181 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": 0.3, "stimA_condition": 0.5}
+2024-08-27 17:38:54,182 [DEBUG]  Trial.log 103.940 initialize status = ok
+2024-08-27 17:38:54,182 [DEBUG]  Trial.log 103.940 start recording 
+2024-08-27 17:38:54,182 [INFO]  start_recording
+2024-08-27 17:38:54,308 [DEBUG]  Trial.log 104.066 start 
+2024-08-27 17:38:54,310 [DEBUG]  Trial.log 104.068 show fixation 
+2024-08-27 17:38:54,310 [INFO]  send trigger 0
+2024-08-27 17:38:54,815 [DEBUG]  Trial.log 104.574 show cue 
+2024-08-27 17:38:54,815 [INFO]  send trigger 1
+2024-08-27 17:38:56,322 [DEBUG]  Trial.log 106.080 show fixation 
+2024-08-27 17:38:56,322 [INFO]  send trigger 0
+2024-08-27 17:38:56,836 [DEBUG]  Trial.log 106.595 start sound 
+2024-08-27 17:38:56,836 [INFO]  send trigger 2
+2024-08-27 17:38:57,337 [DEBUG]  Trial.log 107.095 start decision window 
+2024-08-27 17:38:59,652 [DEBUG]  Trial.log 109.411 response response = f, performance = Correct
+2024-08-27 17:38:59,652 [DEBUG]  Trial.log 109.411 done 
+2024-08-27 17:38:59,652 [INFO]  send trigger 4
+2024-08-27 17:38:59,652 [INFO]  end trial [{"time": 103.939864666434, "event": "initialize", "status": "ok"}, {"time": 103.93993399990723, "event": "start recording"}, {"time": 104.06608562497422, "event": "start"}, {"time": 104.06844879151322, "event": "show fixation"}, {"time": 104.57379599986598, "event": "show cue"}, {"time": 106.08033154136501, "event": "show fixation"}, {"time": 106.59456804138608, "event": "start sound"}, {"time": 107.09502141643316, "event": "start decision window"}, {"time": 109.41059116646647, "event": "response", "response": "f", "performance": "Correct"}, {"time": 109.41072179144248, "event": "done"}]
+2024-08-27 17:38:59,652 [INFO]  stop_recording
+2024-08-27 17:38:59,671 [INFO]  gt.status is ok
+2024-08-27 17:38:59,671 [DEBUG]  add bonus points 1.1844111667014658 (total = 1.52)
+2024-08-27 17:38:59,671 [INFO]  current bonus: 1.52
+2024-08-27 17:38:59,671 [INFO]  2/2
+2024-08-27 17:39:01,015 [INFO]  doTrackerSetup

@@ -1,0 +1,22 @@
+2024-08-24 16:44:10,950 [INFO]  starting up 24-08-24-1644_setting0 at 2.4239640834275633
+2024-08-24 16:44:10,988 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 16:44:10,988 [INFO]  setting file name: s0
+2024-08-24 16:44:10,989 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 16:44:12,197 [INFO]  Created window with size [3840 2160]
+2024-08-24 16:44:13,916 [INFO]  Using dummy triggers
+2024-08-24 16:44:13,916 [INFO]  begin main
+2024-08-24 16:44:13,917 [DEBUG]  message: Ready? Let go! (None)
+2024-08-24 16:44:41,502 [INFO]  starting up 24-08-24-1644_setting0 at 2.0934032914228737
+2024-08-24 16:44:41,529 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 16:44:41,530 [INFO]  setting file name: s0
+2024-08-24 16:44:41,530 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 16:44:42,680 [INFO]  Created window with size [3840 2160]
+2024-08-24 16:44:42,862 [INFO]  Using dummy triggers
+2024-08-24 16:44:42,862 [INFO]  begin setup_eyetracker
+2024-08-24 16:44:42,862 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please tell the experimenter. (Wait for the experimenter)
+2024-08-24 16:44:50,833 [INFO]  New EyeLink object
+2024-08-24 16:44:50,833 [INFO]  Initializing new tracker
+2024-08-24 16:45:04,529 [DEBUG]  EyeLink.message Set up calibration
+2024-08-24 16:45:04,878 [INFO]  Tracker initialized
+2024-08-24 16:45:04,878 [DEBUG]  EyeLink.message Set up calibration
+2024-08-24 16:45:04,908 [INFO]  doTrackerSetup

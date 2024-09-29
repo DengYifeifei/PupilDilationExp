@@ -42,5 +42,3 @@ class Bonus(object):
     def describe_scheme(self):
         return "one cent for every " + num_string(self.points_per_cent, "point")
 
-
-

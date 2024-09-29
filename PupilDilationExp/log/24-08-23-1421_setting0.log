@@ -1,0 +1,54 @@
+2024-08-23 14:21:16,974 [INFO]  starting up 24-08-23-1421_setting0 at 1.9559403751045465
+2024-08-23 14:21:17,016 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 14:21:17,016 [INFO]  setting file name: s0
+2024-08-23 14:21:17,016 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 14:21:18,172 [INFO]  Created window with size [3840 2160]
+2024-08-23 14:21:18,598 [INFO]  Using dummy triggers
+2024-08-23 14:21:18,599 [INFO]  begin welcome
+2024-08-23 14:21:18,599 [INFO]  send trigger 4
+2024-08-23 14:21:18,600 [INFO]  start Welcome
+2024-08-23 14:21:18,600 [DEBUG]  message: Welcome to the experiment! (None)
+2024-08-23 14:21:19,145 [DEBUG]  message: During the test, you are going to receive a series of sound pairs coming from both the left and the right channels of your headset. (None)
+2024-08-23 14:21:19,729 [DEBUG]  message: Sometimes, the sounds are the same: (None)
+2024-08-23 14:21:43,271 [INFO]  starting up 24-08-23-1421_setting0 at 2.1219469166826457
+2024-08-23 14:21:43,301 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 14:21:43,301 [INFO]  setting file name: s0
+2024-08-23 14:21:43,301 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 14:21:44,458 [INFO]  Created window with size [3840 2160]
+2024-08-23 14:21:44,994 [INFO]  Using dummy triggers
+2024-08-23 14:21:44,994 [INFO]  begin welcome
+2024-08-23 14:21:44,995 [INFO]  send trigger 4
+2024-08-23 14:21:44,997 [INFO]  start Welcome
+2024-08-23 14:21:44,997 [DEBUG]  message: Welcome to the experiment! (None)
+2024-08-23 14:21:51,873 [DEBUG]  message: During the test, you are going to receive a series of sound pairs coming from both the left and the right channels of your headset. (None)
+2024-08-23 14:21:55,639 [DEBUG]  message: Sometimes, the sounds are the same: (None)
+2024-08-23 14:21:56,987 [DEBUG]  message: Other times, they are the different. (None)
+2024-08-23 14:22:01,484 [DEBUG]  message: Before hearing each pair of sounds, you'll receive cues indicating the stimulus you should respond to. Each stimulus has a corresponding correct response. (None)
+2024-08-23 14:22:17,957 [DEBUG]  message: By the end of the experiment, your bonus points would be calculated depending on the NUMBER of correct responses you made and how QUICK you made these responses. (None)
+2024-08-23 14:22:25,796 [DEBUG]  message: Now Listen! (None)
+2024-08-23 14:22:27,809 [DEBUG]  message: The correct response to this sound is 'f'. (Press 'f' to continue.)
+2024-08-23 14:22:32,811 [DEBUG]  message: And (None)
+2024-08-23 14:22:34,824 [DEBUG]  message: The correct response to this sound is 'j'. (Press 'j' to continue.)
+2024-08-23 14:22:37,555 [INFO]  begin practice_intro
+2024-08-23 14:22:37,555 [DEBUG]  message: Great! These are all the basic rules! Next, you'll be presented with a few practice trials to help you better remember the correct responses to each stimulus and the experiment format. (None)
+2024-08-23 14:22:44,291 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": null, "stimA_condition": null}
+2024-08-23 14:22:44,293 [DEBUG]  Trial.log 63.144 show fixation 
+2024-08-23 14:22:44,293 [INFO]  send trigger 0
+2024-08-23 14:22:44,293 [DEBUG]  MouseLink message
+2024-08-23 14:22:45,296 [DEBUG]  message: None (None)
+2024-08-23 14:22:52,189 [DEBUG]  Trial.log 71.040 show cue 
+2024-08-23 14:22:52,189 [INFO]  send trigger 1
+2024-08-23 14:22:52,189 [DEBUG]  MouseLink message
+2024-08-23 14:22:53,204 [DEBUG]  message: None (None)
+2024-08-23 14:23:20,859 [DEBUG]  Trial.log 99.710 start sound 
+2024-08-23 14:23:20,859 [INFO]  send trigger 2
+2024-08-23 14:23:20,859 [DEBUG]  MouseLink message
+2024-08-23 14:23:21,359 [DEBUG]  message: None (None)
+2024-08-23 14:23:21,366 [INFO]  start decision window
+2024-08-23 14:23:31,366 [DEBUG]  Trial.log 110.217 response response = None, performance = None
+2024-08-23 14:23:31,366 [DEBUG]  MouseLink message
+2024-08-23 14:23:31,366 [INFO]  recieved no response
+2024-08-23 14:23:31,372 [DEBUG]  Trial.log 110.223 show feedback content = no response recieved
+2024-08-23 14:23:31,372 [INFO]  send trigger 3
+2024-08-23 14:23:31,372 [DEBUG]  MouseLink message
+2024-08-23 14:23:36,891 [DEBUG]  message: Now you know the rules. You'll be able to pass the training session if you get 0.85 of the 8 trials right. Ready? Let's begin! (None)

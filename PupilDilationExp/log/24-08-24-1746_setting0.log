@@ -1,0 +1,51 @@
+2024-08-24 17:46:57,742 [INFO]  starting up 24-08-24-1746_setting0 at 1.8586058751679957
+2024-08-24 17:46:57,763 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 17:46:57,763 [INFO]  setting file name: s0
+2024-08-24 17:46:57,763 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 17:46:58,918 [INFO]  Created window with size [3840 2160]
+2024-08-24 17:46:59,097 [INFO]  Using dummy triggers
+2024-08-24 17:46:59,097 [INFO]  begin main
+2024-08-24 17:46:59,097 [DEBUG]  message: Ready? Let go! (None)
+2024-08-24 17:46:59,482 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.3}
+2024-08-24 17:46:59,482 [INFO]  block 0 label:('<<<>>>>>>>', 'oooxxxxxxx')
+2024-08-24 17:46:59,482 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooxxxxxxx (None)
+2024-08-24 17:47:00,339 [INFO]  begin trial {"cue_direction": "right", "stimulus": "B|B", "correct_response": "j", "left_cue_condition": 0.3, "stimA_condition": 0.3}
+2024-08-24 17:47:00,339 [DEBUG]  Trial.log 4.455 initialize status = ok
+2024-08-24 17:47:00,339 [DEBUG]  MouseLink message
+2024-08-24 17:47:00,339 [DEBUG]  Trial.log 4.455 start recording 
+2024-08-24 17:47:00,339 [DEBUG]  MouseLink message
+2024-08-24 17:47:00,339 [INFO]  MouseLink start_recording
+2024-08-24 17:47:00,339 [DEBUG]  Trial.log 4.455 start 
+2024-08-24 17:47:00,339 [DEBUG]  MouseLink message
+2024-08-24 17:47:00,341 [DEBUG]  Trial.log 4.457 show fixation 
+2024-08-24 17:47:00,341 [INFO]  send trigger 0
+2024-08-24 17:47:00,341 [DEBUG]  MouseLink message
+2024-08-24 17:47:00,847 [DEBUG]  Trial.log 4.963 show cue 
+2024-08-24 17:47:00,847 [INFO]  send trigger 1
+2024-08-24 17:47:00,847 [DEBUG]  MouseLink message
+2024-08-24 17:47:02,353 [DEBUG]  Trial.log 6.469 show fixation 
+2024-08-24 17:47:02,353 [INFO]  send trigger 0
+2024-08-24 17:47:02,353 [DEBUG]  MouseLink message
+2024-08-24 17:47:02,864 [DEBUG]  Trial.log 6.980 start sound 
+2024-08-24 17:47:02,864 [INFO]  send trigger 2
+2024-08-24 17:47:02,864 [DEBUG]  MouseLink message
+2024-08-24 17:47:03,364 [DEBUG]  Trial.log 7.480 start decision window 
+2024-08-24 17:47:03,364 [DEBUG]  MouseLink message
+2024-08-24 17:47:05,956 [DEBUG]  Trial.log 10.073 response response = j, performance = Correct
+2024-08-24 17:47:05,956 [DEBUG]  MouseLink message
+2024-08-24 17:47:05,956 [DEBUG]  Trial.log 10.073 done 
+2024-08-24 17:47:05,957 [INFO]  send trigger 4
+2024-08-24 17:47:05,957 [DEBUG]  MouseLink message
+2024-08-24 17:47:05,957 [INFO]  end trial [{"time": 4.455198625102639, "event": "initialize", "status": "ok"}, {"time": 4.455275624990463, "event": "start recording"}, {"time": 4.4553416250273585, "event": "start"}, {"time": 4.456884833518416, "event": "show fixation"}, {"time": 4.9627866668161005, "event": "show cue"}, {"time": 6.469322791788727, "event": "show fixation"}, {"time": 6.979977000039071, "event": "start sound"}, {"time": 7.480112875113264, "event": "start decision window"}, {"time": 10.07256625010632, "event": "response", "response": "j", "performance": "Correct"}, {"time": 10.072707458632067, "event": "done"}]
+2024-08-24 17:47:05,957 [INFO]  MouseLink stop_recording
+2024-08-24 17:47:05,959 [INFO]  gt.status is ok
+2024-08-24 17:47:05,959 [DEBUG]  add bonus points -0.09246349986642599 (total = 0)
+2024-08-24 17:47:05,959 [ERROR]  Caught exception in main
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 562, in main
+    self.run_test_trial(left_cue_probability, A_probability)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 529, in run_test_trial
+    logging.info('current bonus: %s', self.bonus.points())
+TypeError: 'int' object is not callable

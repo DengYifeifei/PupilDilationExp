@@ -1,0 +1,8 @@
+2024-08-24 15:17:54,578 [INFO]  starting up 24-08-24-1517_setting0 at 3.522815124830231
+2024-08-24 15:17:54,606 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 15:17:54,606 [INFO]  setting file name: s0
+2024-08-24 15:17:54,606 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 15:17:55,809 [INFO]  Created window with size [3840 2160]
+2024-08-24 15:17:57,550 [INFO]  Using dummy triggers
+2024-08-24 15:17:57,550 [INFO]  begin practice_intro
+2024-08-24 15:17:57,550 [DEBUG]  message: Great! These are all the basic rules! Next, you'll be presented with a few practice trials to help you better remember the correct responses to each stimulus and the experiment format. (None)

@@ -1,0 +1,97 @@
+2024-08-23 17:05:08,275 [INFO]  starting up 24-08-23-1705_setting0 at 2.1684172083623707
+2024-08-23 17:05:08,318 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-23 17:05:08,318 [INFO]  setting file name: s0
+2024-08-23 17:05:08,318 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 17:05:09,524 [INFO]  Created window with size [3840 2160]
+2024-08-23 17:05:10,070 [INFO]  Using dummy triggers
+2024-08-23 17:05:10,070 [INFO]  begin welcome
+2024-08-23 17:05:10,070 [INFO]  send trigger 4
+2024-08-23 17:05:10,070 [INFO]  start Welcome
+2024-08-23 17:05:10,070 [DEBUG]  message: Welcome to the experiment! (None)
+2024-08-23 17:05:10,741 [DEBUG]  message: During the test, you are going to receive a series of sound pairs coming from both the left and the right channels of your headset. (None)
+2024-08-23 17:05:42,379 [INFO]  starting up 24-08-23-1705_setting0 at 2.0052849585190415
+2024-08-23 17:05:42,418 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-23 17:05:42,418 [INFO]  setting file name: s0
+2024-08-23 17:05:42,418 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 17:05:43,573 [INFO]  Created window with size [3840 2160]
+2024-08-23 17:05:44,501 [INFO]  Using dummy triggers
+2024-08-23 17:05:44,501 [INFO]  begin practice
+2024-08-23 17:05:44,502 [INFO]  start practice trials
+2024-08-23 17:05:44,502 [DEBUG]  message: complete 2 practice rounds to continue (None)
+2024-08-23 17:05:47,743 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": null, "stimA_condition": null}
+2024-08-23 17:05:47,743 [DEBUG]  Trial.log 7.369 initialize status = ok
+2024-08-23 17:05:47,743 [DEBUG]  MouseLink message
+2024-08-23 17:05:47,743 [DEBUG]  Trial.log 7.369 start recording 
+2024-08-23 17:05:47,743 [DEBUG]  MouseLink message
+2024-08-23 17:05:47,743 [INFO]  MouseLink start_recording
+2024-08-23 17:05:47,743 [DEBUG]  Trial.log 7.369 start 
+2024-08-23 17:05:47,743 [DEBUG]  MouseLink message
+2024-08-23 17:05:47,746 [DEBUG]  Trial.log 7.372 show fixation 
+2024-08-23 17:05:47,746 [INFO]  send trigger 0
+2024-08-23 17:05:47,746 [DEBUG]  MouseLink message
+2024-08-23 17:05:49,409 [DEBUG]  Trial.log 9.036 show cue 
+2024-08-23 17:05:49,409 [INFO]  send trigger 1
+2024-08-23 17:05:49,409 [DEBUG]  MouseLink message
+2024-08-23 17:05:50,917 [DEBUG]  Trial.log 10.543 show fixation 
+2024-08-23 17:05:50,917 [INFO]  send trigger 0
+2024-08-23 17:05:50,917 [DEBUG]  MouseLink message
+2024-08-23 17:05:51,427 [DEBUG]  Trial.log 11.054 start sound 
+2024-08-23 17:05:51,427 [INFO]  send trigger 2
+2024-08-23 17:05:51,427 [DEBUG]  MouseLink message
+2024-08-23 17:05:51,927 [DEBUG]  Trial.log 11.554 start decision window 
+2024-08-23 17:05:51,927 [DEBUG]  MouseLink message
+2024-08-23 17:05:52,956 [DEBUG]  Trial.log 12.582 response response = f, performance = Correct
+2024-08-23 17:05:52,956 [DEBUG]  MouseLink message
+2024-08-23 17:05:52,956 [DEBUG]  Trial.log 12.582 show feedback content = correct
+2024-08-23 17:05:52,956 [INFO]  send trigger 3
+2024-08-23 17:05:52,956 [DEBUG]  MouseLink message
+2024-08-23 17:05:53,389 [DEBUG]  Trial.log 13.016 done 
+2024-08-23 17:05:53,389 [INFO]  send trigger 4
+2024-08-23 17:05:53,389 [DEBUG]  MouseLink message
+2024-08-23 17:05:53,389 [INFO]  end trial [{"time": 7.369103041710332, "event": "initialize", "status": "ok"}, {"time": 7.369183333357796, "event": "start recording"}, {"time": 7.369248708477244, "event": "start"}, {"time": 7.37207212485373, "event": "show fixation"}, {"time": 9.035541541641578, "event": "show cue"}, {"time": 10.543104166630656, "event": "show fixation"}, {"time": 11.053676291601732, "event": "start sound"}, {"time": 11.553834166610613, "event": "start decision window"}, {"time": 12.582053999882191, "event": "response", "response": "f", "performance": "Correct"}, {"time": 12.582175749819726, "event": "show feedback", "content": "correct"}, {"time": 13.015711499843746, "event": "done"}]
+2024-08-23 17:05:53,390 [INFO]  MouseLink stop_recording
+2024-08-23 17:05:53,392 [DEBUG]  message: complete 1 practice rounds to continue (None)
+2024-08-23 17:05:53,962 [INFO]  begin trial {"cue_direction": "left", "stimulus": "B|B", "correct_response": "j", "left_cue_condition": null, "stimA_condition": null}
+2024-08-23 17:05:53,962 [DEBUG]  Trial.log 13.589 initialize status = ok
+2024-08-23 17:05:53,962 [DEBUG]  MouseLink message
+2024-08-23 17:05:53,962 [DEBUG]  Trial.log 13.589 start recording 
+2024-08-23 17:05:53,962 [DEBUG]  MouseLink message
+2024-08-23 17:05:53,962 [INFO]  MouseLink start_recording
+2024-08-23 17:05:53,962 [DEBUG]  Trial.log 13.589 start 
+2024-08-23 17:05:53,962 [DEBUG]  MouseLink message
+2024-08-23 17:05:53,963 [DEBUG]  Trial.log 13.590 show fixation 
+2024-08-23 17:05:53,963 [INFO]  send trigger 0
+2024-08-23 17:05:53,963 [DEBUG]  MouseLink message
+2024-08-23 17:05:55,888 [DEBUG]  Trial.log 15.514 show cue 
+2024-08-23 17:05:55,888 [INFO]  send trigger 1
+2024-08-23 17:05:55,888 [DEBUG]  MouseLink message
+2024-08-23 17:05:57,395 [DEBUG]  Trial.log 17.021 show fixation 
+2024-08-23 17:05:57,395 [INFO]  send trigger 0
+2024-08-23 17:05:57,395 [DEBUG]  MouseLink message
+2024-08-23 17:05:57,903 [DEBUG]  Trial.log 17.530 start sound 
+2024-08-23 17:05:57,903 [INFO]  send trigger 2
+2024-08-23 17:05:57,903 [DEBUG]  MouseLink message
+2024-08-23 17:05:58,403 [DEBUG]  Trial.log 18.030 start decision window 
+2024-08-23 17:05:58,403 [DEBUG]  MouseLink message
+2024-08-23 17:05:59,467 [DEBUG]  Trial.log 19.094 response response = j, performance = Correct
+2024-08-23 17:05:59,467 [DEBUG]  MouseLink message
+2024-08-23 17:05:59,467 [DEBUG]  Trial.log 19.094 show feedback content = correct
+2024-08-23 17:05:59,467 [INFO]  send trigger 3
+2024-08-23 17:05:59,467 [DEBUG]  MouseLink message
+2024-08-23 17:05:59,829 [DEBUG]  Trial.log 19.455 done 
+2024-08-23 17:05:59,829 [INFO]  send trigger 4
+2024-08-23 17:05:59,829 [DEBUG]  MouseLink message
+2024-08-23 17:05:59,829 [INFO]  end trial [{"time": 13.58861279161647, "event": "initialize", "status": "ok"}, {"time": 13.588673624908552, "event": "start recording"}, {"time": 13.588743041735142, "event": "start"}, {"time": 13.58961237501353, "event": "show fixation"}, {"time": 15.514377958374098, "event": "show cue"}, {"time": 17.02128008333966, "event": "show fixation"}, {"time": 17.529727583518252, "event": "start sound"}, {"time": 18.029879458481446, "event": "start decision window"}, {"time": 19.093535958323628, "event": "response", "response": "j", "performance": "Correct"}, {"time": 19.093598666600883, "event": "show feedback", "content": "correct"}, {"time": 19.455325208371505, "event": "done"}]
+2024-08-23 17:05:59,829 [INFO]  MouseLink stop_recording
+2024-08-23 17:05:59,832 [INFO]  correct proportion 1.0
+2024-08-23 17:05:59,832 [DEBUG]  message: Great job! (None)
+2024-08-23 17:06:00,808 [INFO]  begin intro_main
+2024-08-23 17:06:00,808 [DEBUG]  message: There's a couple of additional rules/info you need to know before starting the main phase of the experiment. (None)
+2024-08-23 17:06:29,833 [DEBUG]  message: You'll see 9 blocks in the main phase. Each block inludes 30 trials, taking 4 minites maximum. (None)
+2024-08-23 17:06:33,751 [DEBUG]  message: Between the blocks, the chances of you seeing a particular cue or stimulus vary.  (None)
+2024-08-23 17:07:16,409 [DEBUG]  message: <<<>>>>>>> oooooooxxx 
+For example! This pattern indicates that you will see the left cue approximately 30% of the time and hear one of the two stimuli approximately 70% of the time. (None)
+2024-08-23 17:07:45,823 [DEBUG]  message: Apart from that, it will be greatly appreciated if you can focus on the center of the screen as much as possible, since it will help the eyetracker get better measurements  :) (None)
+2024-08-23 17:07:49,686 [DEBUG]  message: Ready? Let go! (None)
+2024-08-23 17:08:06,210 [INFO]  begin setup_eyetracker
+2024-08-23 17:08:06,211 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please tell the experimenter. (Wait for the experimenter (space))

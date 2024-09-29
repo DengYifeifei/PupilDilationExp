@@ -1,0 +1,9 @@
+2024-08-23 16:11:03,850 [INFO]  starting up 24-08-23-1611_setting0 at 2.452355541754514
+2024-08-23 16:11:03,876 [INFO]  git SHA: c9de28b4abdb54d6f72023aae035dd87567c6062
+2024-08-23 16:11:03,877 [INFO]  setting file name: s0
+2024-08-23 16:11:03,877 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 16:11:05,097 [INFO]  Created window with size [3840 2160]
+2024-08-23 16:11:05,806 [INFO]  Using dummy triggers
+2024-08-23 16:11:05,806 [INFO]  begin practice
+2024-08-23 16:11:05,806 [INFO]  start practice trials
+2024-08-23 16:11:05,806 [DEBUG]  message: complete 8 practice rounds to continue (None)

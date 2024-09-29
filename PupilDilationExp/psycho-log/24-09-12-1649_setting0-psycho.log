@@ -1,0 +1,320 @@
+1.5101 	WARNING 	The 'psychtoolbox' library cannot be loaded but is required for audio capture (use `pip install psychtoolbox` to get it). Microphone recording will be unavailable this session. Note that opening a microphone stream will raise an error.
+1.5133 	ERROR 	Support for the `sounddevice` audio backend is not available this session. Please install `psychopy-sounddevice` and restart the session to enable support.
+1.5135 	ERROR 	Support for the `pyo` audio backend is not available this session. Please install `psychopy-pyo` and restart the session to enable support.
+1.5136 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['PTB', 'sounddevice', 'pyo', 'pygame'] (in that order).
+1.5269 	INFO 	time is 2024-09-12 16:49:16,611280
+1.5469 	WARNING 	Monitor specification not found. Creating a temporary one...
+1.5503 	WARNING 	User requested fullscreen with size [1350  750], but screen is actually [1920, 1080]. Using actual size
+2.6713 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+2.6720 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x16da46fa0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x16da46f40>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x16da46d90>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x303119c40>, multiSample=False, name='window1', numSamples=2, pos=[480.0, 270.0], screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+2.6723 	EXP 	window1: mouseVisible = True
+2.6723 	EXP 	window1: backgroundImage = None
+2.6724 	EXP 	window1: backgroundFit = 'cover'
+2.6760 	INFO 	Mouse: using default window
+2.6761 	EXP 	window1: mouseVisible = True
+2.6768 	EXP 	window1: mouseVisible = False
+2.6769 	EXP 	window1: units = 'pix'
+2.6769 	INFO 	Mouse: using default window
+3.1678 	WARNING 	t of last frame was 491.81ms (=1/2)
+4.2683 	DATA 	Keypress: space
+4.2731 	WARNING 	t of last frame was 1087.89ms (=1/0)
+4.5754 	EXP 	window1: units = 'pix'
+4.5755 	INFO 	Mouse: using default window
+4.6067 	INFO 	Mouse: using default window
+4.6259 	WARNING 	t of last frame was 352.88ms (=1/2)
+7.9791 	DATA 	Keypress: return
+8.0939 	WARNING 	t of last frame was 3467.96ms (=1/0)
+8.1620 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+33.6557 	EXP 	window1: units = 'pix'
+41.9604 	EXP 	window1: units = 'pix'
+41.9636 	EXP 	window1: units = 'pix'
+44.1747 	DATA 	Keypress: space
+52.1850 	DATA 	Keypress: space
+54.8420 	EXP 	Set  sound=./stim/P|P.mp3
+54.8422 	EXP 	Sound  started
+55.9022 	DATA 	Keypress: j
+60.3421 	EXP 	Set  sound=./stim/P|G.mp3
+60.3423 	EXP 	Sound  started
+62.5184 	DATA 	Keypress: j
+67.0379 	EXP 	Set  sound=./stim/G|P.mp3
+67.0381 	EXP 	Sound  started
+68.3585 	DATA 	Keypress: f
+73.4654 	EXP 	Set  sound=./stim/G|G.mp3
+73.4656 	EXP 	Sound  started
+74.5345 	DATA 	Keypress: f
+79.6126 	EXP 	Set  sound=./stim/P|G.mp3
+79.6127 	EXP 	Sound  started
+80.5984 	DATA 	Keypress: j
+85.3159 	EXP 	Set  sound=./stim/G|G.mp3
+85.3160 	EXP 	Sound  started
+86.5505 	DATA 	Keypress: f
+91.4804 	EXP 	Set  sound=./stim/P|G.mp3
+91.4805 	EXP 	Sound  started
+93.9265 	DATA 	Keypress: j
+98.5021 	EXP 	Set  sound=./stim/G|P.mp3
+98.5023 	EXP 	Sound  started
+100.0065 	DATA 	Keypress: f
+104.8322 	EXP 	Set  sound=./stim/P|G.mp3
+104.8324 	EXP 	Sound  started
+106.4864 	DATA 	Keypress: j
+110.8803 	EXP 	Set  sound=./stim/G|P.mp3
+110.8805 	EXP 	Sound  started
+113.0225 	DATA 	Keypress: j
+117.6231 	EXP 	Set  sound=./stim/P|G.mp3
+117.6232 	EXP 	Sound  started
+119.3339 	DATA 	Keypress: f
+124.2535 	EXP 	Set  sound=./stim/G|G.mp3
+124.2537 	EXP 	Sound  started
+125.5265 	DATA 	Keypress: f
+130.5073 	EXP 	Set  sound=./stim/G|P.mp3
+130.5075 	EXP 	Sound  started
+132.5425 	DATA 	Keypress: j
+137.1021 	EXP 	Set  sound=./stim/G|G.mp3
+137.1022 	EXP 	Sound  started
+138.3008 	DATA 	Keypress: f
+142.9425 	EXP 	Set  sound=./stim/P|P.mp3
+142.9426 	EXP 	Sound  started
+143.8785 	DATA 	Keypress: j
+149.0461 	EXP 	Set  sound=./stim/P|P.mp3
+149.0463 	EXP 	Sound  started
+151.4865 	DATA 	Keypress: j
+156.2643 	EXP 	Set  sound=./stim/P|P.mp3
+156.2644 	EXP 	Sound  started
+157.8066 	DATA 	Keypress: j
+162.5740 	EXP 	Set  sound=./stim/G|G.mp3
+162.5741 	EXP 	Sound  started
+164.1025 	DATA 	Keypress: f
+168.5818 	EXP 	Set  sound=./stim/G|P.mp3
+168.5820 	EXP 	Sound  started
+170.8145 	DATA 	Keypress: j
+175.2411 	EXP 	Set  sound=./stim/P|G.mp3
+175.2412 	EXP 	Sound  started
+176.8624 	DATA 	Keypress: f
+181.1148 	EXP 	Set  sound=./stim/G|P.mp3
+181.1149 	EXP 	Sound  started
+182.5745 	DATA 	Keypress: j
+186.8824 	EXP 	Set  sound=./stim/G|G.mp3
+186.8825 	EXP 	Sound  started
+188.5186 	DATA 	Keypress: f
+192.7195 	EXP 	Set  sound=./stim/P|G.mp3
+192.7197 	EXP 	Sound  started
+195.3825 	DATA 	Keypress: f
+199.7212 	EXP 	Set  sound=./stim/G|G.mp3
+199.7214 	EXP 	Sound  started
+200.9745 	DATA 	Keypress: f
+205.8156 	EXP 	Set  sound=./stim/P|P.mp3
+205.8157 	EXP 	Sound  started
+206.6786 	DATA 	Keypress: j
+211.5504 	EXP 	Set  sound=./stim/P|P.mp3
+211.5506 	EXP 	Sound  started
+212.8066 	DATA 	Keypress: j
+217.2831 	EXP 	Set  sound=./stim/G|G.mp3
+217.2832 	EXP 	Sound  started
+218.2384 	DATA 	Keypress: f
+223.2988 	EXP 	Set  sound=./stim/G|P.mp3
+223.2989 	EXP 	Sound  started
+224.8385 	DATA 	Keypress: f
+229.8133 	EXP 	Set  sound=./stim/P|P.mp3
+229.8135 	EXP 	Sound  started
+231.0386 	DATA 	Keypress: j
+235.9611 	EXP 	Set  sound=./stim/P|P.mp3
+235.9613 	EXP 	Sound  started
+236.9905 	DATA 	Keypress: j
+316.2625 	DATA 	Keypress: space
+318.1089 	DATA 	Keypress: return
+334.1742 	EXP 	window1: units = 'pix'
+334.1777 	EXP 	window1: units = 'pix'
+337.5025 	DATA 	Keypress: space
+340.1558 	EXP 	Set  sound=./stim/G|G.mp3
+340.1559 	EXP 	Sound  started
+341.1105 	DATA 	Keypress: f
+346.1495 	EXP 	Set  sound=./stim/G|P.mp3
+346.1497 	EXP 	Sound  started
+347.8305 	DATA 	Keypress: j
+352.3509 	EXP 	Set  sound=./stim/G|G.mp3
+352.3510 	EXP 	Sound  started
+353.2546 	DATA 	Keypress: f
+357.5810 	EXP 	Set  sound=./stim/G|G.mp3
+357.5811 	EXP 	Sound  started
+358.2624 	DATA 	Keypress: f
+362.8314 	EXP 	Set  sound=./stim/G|G.mp3
+362.8315 	EXP 	Sound  started
+363.5666 	DATA 	Keypress: f
+367.7565 	EXP 	Set  sound=./stim/G|G.mp3
+367.7567 	EXP 	Sound  started
+368.5986 	DATA 	Keypress: f
+373.1814 	EXP 	Set  sound=./stim/G|G.mp3
+373.1816 	EXP 	Sound  started
+373.8866 	DATA 	Keypress: f
+378.6150 	EXP 	Set  sound=./stim/G|G.mp3
+378.6151 	EXP 	Sound  started
+379.4546 	DATA 	Keypress: f
+384.3141 	EXP 	Set  sound=./stim/G|G.mp3
+384.3142 	EXP 	Sound  started
+385.3187 	DATA 	Keypress: f
+390.4289 	EXP 	Set  sound=./stim/G|G.mp3
+390.4290 	EXP 	Sound  started
+391.1425 	DATA 	Keypress: f
+395.7844 	EXP 	Set  sound=./stim/G|G.mp3
+395.7846 	EXP 	Sound  started
+396.5666 	DATA 	Keypress: f
+400.8317 	EXP 	Set  sound=./stim/P|G.mp3
+400.8318 	EXP 	Sound  started
+402.8306 	DATA 	Keypress: f
+407.6676 	EXP 	Set  sound=./stim/G|G.mp3
+407.6678 	EXP 	Sound  started
+408.7666 	DATA 	Keypress: f
+413.0574 	EXP 	Set  sound=./stim/G|G.mp3
+413.0575 	EXP 	Sound  started
+414.0306 	DATA 	Keypress: f
+414.0684 	DATA 	Keypress: f
+418.4089 	EXP 	Set  sound=./stim/G|G.mp3
+418.4090 	EXP 	Sound  started
+419.2946 	DATA 	Keypress: f
+423.6562 	EXP 	Set  sound=./stim/G|G.mp3
+423.6563 	EXP 	Sound  started
+424.9426 	DATA 	Keypress: f
+430.0785 	EXP 	Set  sound=./stim/G|G.mp3
+430.0786 	EXP 	Sound  started
+431.0466 	DATA 	Keypress: f
+435.5260 	EXP 	Set  sound=./stim/G|P.mp3
+435.5262 	EXP 	Sound  started
+437.1266 	DATA 	Keypress: f
+441.9482 	EXP 	Set  sound=./stim/G|P.mp3
+441.9483 	EXP 	Sound  started
+443.3426 	DATA 	Keypress: f
+447.6727 	EXP 	Set  sound=./stim/G|P.mp3
+447.6728 	EXP 	Sound  started
+448.3346 	DATA 	Keypress: f
+453.2992 	EXP 	Set  sound=./stim/G|G.mp3
+453.2993 	EXP 	Sound  started
+454.1587 	DATA 	Keypress: f
+459.1351 	EXP 	Set  sound=./stim/G|G.mp3
+459.1352 	EXP 	Sound  started
+459.8947 	DATA 	Keypress: f
+464.2345 	EXP 	Set  sound=./stim/P|G.mp3
+464.2346 	EXP 	Sound  started
+466.0786 	DATA 	Keypress: j
+470.8305 	EXP 	Set  sound=./stim/P|G.mp3
+470.8307 	EXP 	Sound  started
+472.5027 	DATA 	Keypress: f
+472.5753 	DATA 	Keypress: f
+477.2981 	EXP 	Set  sound=./stim/G|G.mp3
+477.2983 	EXP 	Sound  started
+478.3906 	DATA 	Keypress: f
+483.1507 	EXP 	Set  sound=./stim/G|G.mp3
+483.1509 	EXP 	Sound  started
+484.0066 	DATA 	Keypress: f
+488.7627 	EXP 	Set  sound=./stim/P|G.mp3
+488.7628 	EXP 	Sound  started
+489.8787 	DATA 	Keypress: j
+494.3641 	EXP 	Set  sound=./stim/P|G.mp3
+494.3643 	EXP 	Sound  started
+496.0707 	DATA 	Keypress: j
+500.3483 	EXP 	Set  sound=./stim/G|G.mp3
+500.3485 	EXP 	Sound  started
+501.2226 	DATA 	Keypress: f
+505.5635 	EXP 	Set  sound=./stim/G|G.mp3
+505.5637 	EXP 	Sound  started
+506.7826 	DATA 	Keypress: f
+566.1187 	DATA 	Keypress: space
+567.6811 	DATA 	Keypress: return
+607.6464 	EXP 	window1: units = 'pix'
+612.9350 	EXP 	window1: units = 'pix'
+612.9379 	EXP 	window1: units = 'pix'
+616.4788 	DATA 	Keypress: space
+619.1334 	EXP 	Set  sound=./stim/P|G.mp3
+619.1336 	EXP 	Sound  started
+621.1106 	DATA 	Keypress: j
+626.0199 	EXP 	Set  sound=./stim/G|P.mp3
+626.0200 	EXP 	Sound  started
+627.4467 	DATA 	Keypress: f
+632.4745 	EXP 	Set  sound=./stim/P|P.mp3
+632.4747 	EXP 	Sound  started
+633.6787 	DATA 	Keypress: j
+638.5850 	EXP 	Set  sound=./stim/P|P.mp3
+638.5852 	EXP 	Sound  started
+639.7347 	DATA 	Keypress: j
+644.7887 	EXP 	Set  sound=./stim/P|P.mp3
+644.7889 	EXP 	Sound  started
+645.7747 	DATA 	Keypress: j
+650.6785 	EXP 	Set  sound=./stim/P|P.mp3
+650.6786 	EXP 	Sound  started
+651.7107 	DATA 	Keypress: j
+656.7440 	EXP 	Set  sound=./stim/P|P.mp3
+656.7442 	EXP 	Sound  started
+657.5267 	DATA 	Keypress: j
+662.0631 	EXP 	Set  sound=./stim/P|P.mp3
+662.0632 	EXP 	Sound  started
+663.2788 	DATA 	Keypress: j
+667.6467 	EXP 	Set  sound=./stim/P|P.mp3
+667.6469 	EXP 	Sound  started
+668.4147 	DATA 	Keypress: j
+672.6636 	EXP 	Set  sound=./stim/G|P.mp3
+672.6637 	EXP 	Sound  started
+674.4708 	DATA 	Keypress: f
+678.8402 	EXP 	Set  sound=./stim/G|P.mp3
+678.8403 	EXP 	Sound  started
+680.3027 	DATA 	Keypress: j
+684.5577 	EXP 	Set  sound=./stim/P|G.mp3
+684.5579 	EXP 	Sound  started
+686.5747 	DATA 	Keypress: j
+690.9048 	EXP 	Set  sound=./stim/P|G.mp3
+690.9049 	EXP 	Sound  started
+692.4627 	DATA 	Keypress: f
+697.2686 	EXP 	Set  sound=./stim/G|G.mp3
+697.2687 	EXP 	Sound  started
+698.4068 	DATA 	Keypress: f
+702.9277 	EXP 	Set  sound=./stim/P|P.mp3
+702.9279 	EXP 	Sound  started
+703.9109 	DATA 	Keypress: j
+708.1341 	EXP 	Set  sound=./stim/G|P.mp3
+708.1342 	EXP 	Sound  started
+709.2308 	DATA 	Keypress: f
+713.9838 	EXP 	Set  sound=./stim/G|P.mp3
+713.9840 	EXP 	Sound  started
+714.9188 	DATA 	Keypress: f
+719.9076 	EXP 	Set  sound=./stim/G|P.mp3
+719.9078 	EXP 	Sound  started
+720.5267 	DATA 	Keypress: f
+725.5472 	EXP 	Set  sound=./stim/P|P.mp3
+725.5474 	EXP 	Sound  started
+726.9028 	DATA 	Keypress: j
+731.5488 	EXP 	Set  sound=./stim/P|P.mp3
+731.5489 	EXP 	Sound  started
+732.4947 	DATA 	Keypress: j
+736.6868 	EXP 	Set  sound=./stim/P|P.mp3
+736.6869 	EXP 	Sound  started
+737.4948 	DATA 	Keypress: j
+742.5344 	EXP 	Set  sound=./stim/P|P.mp3
+742.5346 	EXP 	Sound  started
+743.5587 	DATA 	Keypress: j
+748.3246 	EXP 	Set  sound=./stim/G|P.mp3
+748.3247 	EXP 	Sound  started
+749.2947 	DATA 	Keypress: f
+754.1108 	EXP 	Set  sound=./stim/P|P.mp3
+754.1110 	EXP 	Sound  started
+755.3347 	DATA 	Keypress: f
+759.5810 	EXP 	Set  sound=./stim/P|P.mp3
+759.5811 	EXP 	Sound  started
+761.2227 	DATA 	Keypress: j
+766.2140 	EXP 	Set  sound=./stim/P|G.mp3
+766.2142 	EXP 	Sound  started
+768.8628 	DATA 	Keypress: j
+773.5798 	EXP 	Set  sound=./stim/P|P.mp3
+773.5799 	EXP 	Sound  started
+774.5028 	DATA 	Keypress: j
+778.7031 	EXP 	Set  sound=./stim/G|P.mp3
+778.7033 	EXP 	Sound  started
+779.8467 	DATA 	Keypress: f
+784.4206 	EXP 	Set  sound=./stim/G|P.mp3
+784.4208 	EXP 	Sound  started
+785.3908 	DATA 	Keypress: f
+790.3066 	EXP 	Set  sound=./stim/G|G.mp3
+790.3067 	EXP 	Sound  started
+791.7107 	DATA 	Keypress: f
+816.0869 	DATA 	Keypress: space
+817.5025 	DATA 	Keypress: space

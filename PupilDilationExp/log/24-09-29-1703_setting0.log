@@ -1,0 +1,50 @@
+2024-09-29 17:03:53,198 [INFO]  starting up 24-09-29-1703_setting0 at 3.469495791665395
+2024-09-29 17:03:53,224 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-09-29 17:03:53,224 [INFO]  setting file name: s0
+2024-09-29 17:03:53,225 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-09-29 17:03:54,373 [INFO]  Created window with size [3840 2160]
+2024-09-29 17:03:54,587 [INFO]  Using dummy triggers
+2024-09-29 17:03:54,587 [INFO]  begin setup_eyetracker
+2024-09-29 17:03:54,587 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please look at the circles while they appear. (Please tell the experimenter)
+2024-09-29 17:04:09,557 [INFO]  New EyeLink object
+2024-09-29 17:04:09,557 [INFO]  Initializing new tracker
+2024-09-29 17:04:09,874 [DEBUG]  EyeLink.message Set up calibration
+2024-09-29 17:04:09,904 [INFO]  Tracker initialized
+2024-09-29 17:04:09,905 [DEBUG]  EyeLink.message Set up calibration
+2024-09-29 17:04:09,927 [INFO]  doTrackerSetup
+2024-09-29 17:05:02,397 [INFO]  done doTrackerSetup
+2024-09-29 17:05:02,423 [INFO]  begin main
+2024-09-29 17:05:02,423 [DEBUG]  message: Ready? Let go! (None)
+2024-09-29 17:05:04,782 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.5}
+2024-09-29 17:05:04,782 [INFO]  block 0 label:('<<<>>>>>>>', 'oooooxxxxx')
+2024-09-29 17:05:04,782 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooooxxxxx (None)
+2024-09-29 17:05:07,694 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|A", "correct_response": "f", "left_cue_condition": 0.3, "stimA_condition": 0.5, "response": null, "performance": null, "rt": null}
+2024-09-29 17:05:07,694 [DEBUG]  Trial.log 77.966 initialize status = ok
+2024-09-29 17:05:07,694 [DEBUG]  Trial.log 77.966 start recording 
+2024-09-29 17:05:07,694 [INFO]  start_recording
+2024-09-29 17:05:07,820 [DEBUG]  Trial.log 78.091 start 
+2024-09-29 17:05:07,826 [DEBUG]  Trial.log 78.097 show fixation 
+2024-09-29 17:05:07,826 [INFO]  send trigger 0
+2024-09-29 17:05:08,331 [DEBUG]  Trial.log 78.603 show cue 
+2024-09-29 17:05:08,331 [INFO]  send trigger 1
+2024-09-29 17:05:09,839 [DEBUG]  Trial.log 80.110 show fixation 
+2024-09-29 17:05:09,839 [INFO]  send trigger 0
+2024-09-29 17:05:10,350 [DEBUG]  Trial.log 80.622 start sound 
+2024-09-29 17:05:10,350 [INFO]  send trigger 2
+2024-09-29 17:05:10,850 [DEBUG]  Trial.log 81.122 start decision window 
+2024-09-29 17:05:13,850 [ERROR]  Caught exception in main
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 558, in main
+    trial_status = self.run_test_trial(left_cue_probability, A_probability)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 519, in run_test_trial
+    trial.run()
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/trial.py", line 280, in run
+    show = str(self.recieved_response[0])
+TypeError: 'NoneType' object is not subscriptable
+2024-09-29 17:05:21,073 [WARNING]  emergency save data
+2024-09-29 17:05:21,073 [INFO]  receiving eyelink data
+2024-09-29 17:05:22,842 [INFO]  wrote data/eyelink/24-09-29-1703_setting0/raw.edf
+2024-09-29 17:05:22,843 [WARNING]  eyelink data saved?
+2024-09-29 17:05:22,844 [INFO]  wrote data/exp/v1/24-09-29-1703_setting0.txt

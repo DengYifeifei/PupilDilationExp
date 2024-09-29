@@ -1,0 +1,44 @@
+2024-08-24 16:19:16,093 [INFO]  starting up 24-08-24-1619_setting0 at 2.339621041668579
+2024-08-24 16:19:16,118 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 16:19:16,118 [INFO]  setting file name: s0
+2024-08-24 16:19:16,119 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 16:19:17,266 [INFO]  Created window with size [3840 2160]
+2024-08-24 16:19:17,440 [INFO]  Using dummy triggers
+2024-08-24 16:19:17,440 [INFO]  begin main
+2024-08-24 16:19:17,440 [DEBUG]  message: Ready? Let go! (None)
+2024-08-24 16:19:18,407 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.5}
+2024-08-24 16:19:18,408 [INFO]  block 0 label:('<<<>>>>>>>', 'oooooxxxxx')
+2024-08-24 16:19:18,408 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooooxxxxx (None)
+2024-08-24 16:19:20,309 [INFO]  begin trial {"cue_direction": "right", "stimulus": "A|A", "correct_response": "f", "left_cue_condition": 0.3, "stimA_condition": 0.5}
+2024-08-24 16:19:20,309 [DEBUG]  Trial.log 6.556 initialize status = ok
+2024-08-24 16:19:20,309 [DEBUG]  MouseLink message
+2024-08-24 16:19:20,309 [DEBUG]  Trial.log 6.556 start recording 
+2024-08-24 16:19:20,309 [DEBUG]  MouseLink message
+2024-08-24 16:19:20,309 [INFO]  MouseLink start_recording
+2024-08-24 16:19:20,310 [DEBUG]  Trial.log 6.556 start 
+2024-08-24 16:19:20,310 [DEBUG]  MouseLink message
+2024-08-24 16:19:20,311 [DEBUG]  Trial.log 6.558 show fixation 
+2024-08-24 16:19:20,312 [INFO]  send trigger 0
+2024-08-24 16:19:20,312 [DEBUG]  MouseLink message
+2024-08-24 16:19:20,823 [DEBUG]  Trial.log 7.070 show cue 
+2024-08-24 16:19:20,823 [INFO]  send trigger 1
+2024-08-24 16:19:20,823 [DEBUG]  MouseLink message
+2024-08-24 16:19:22,331 [DEBUG]  Trial.log 8.578 show fixation 
+2024-08-24 16:19:22,331 [INFO]  send trigger 0
+2024-08-24 16:19:22,331 [DEBUG]  MouseLink message
+2024-08-24 16:19:22,841 [DEBUG]  Trial.log 9.088 start sound 
+2024-08-24 16:19:22,841 [INFO]  send trigger 2
+2024-08-24 16:19:22,841 [DEBUG]  MouseLink message
+2024-08-24 16:19:23,341 [DEBUG]  Trial.log 9.588 start decision window 
+2024-08-24 16:19:23,341 [DEBUG]  MouseLink message
+2024-08-24 16:19:25,180 [ERROR]  Caught exception in main
+Traceback (most recent call last):
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 560, in main
+    self.run_test_trial(left_cue_probability, A_probability)
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/experiment.py", line 520, in run_test_trial
+    trial.run()
+  File "/Users/labadmin/PupilDilationExp/PupilDilationExp/trial.py", line 280, in run
+    self.message(msg=self.recieved_response[0], space=False)
+AttributeError: 'Trial' object has no attribute 'message'

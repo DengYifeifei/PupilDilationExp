@@ -1,0 +1,68 @@
+2024-08-24 16:28:41,067 [INFO]  starting up 24-08-24-1628_setting0 at 2.064445500029251
+2024-08-24 16:28:41,096 [INFO]  git SHA: cd5fa54154593ef9c41ab71101e5be212113e163
+2024-08-24 16:28:41,096 [INFO]  setting file name: s0
+2024-08-24 16:28:41,097 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-24 16:28:42,250 [INFO]  Created window with size [3840 2160]
+2024-08-24 16:28:42,432 [INFO]  Using dummy triggers
+2024-08-24 16:28:42,432 [INFO]  begin main
+2024-08-24 16:28:42,433 [DEBUG]  message: Ready? Let go! (None)
+2024-08-24 16:28:42,825 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.3}
+2024-08-24 16:28:42,825 [INFO]  block 0 label:('<<<>>>>>>>', 'oooxxxxxxx')
+2024-08-24 16:28:42,825 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooxxxxxxx (None)
+2024-08-24 16:28:42,981 [INFO]  begin trial {"cue_direction": "right", "stimulus": "B|B", "correct_response": "j", "left_cue_condition": 0.3, "stimA_condition": 0.3}
+2024-08-24 16:28:42,981 [DEBUG]  Trial.log 3.979 initialize status = ok
+2024-08-24 16:28:42,981 [DEBUG]  MouseLink message
+2024-08-24 16:28:42,981 [DEBUG]  Trial.log 3.979 start recording 
+2024-08-24 16:28:42,981 [DEBUG]  MouseLink message
+2024-08-24 16:28:42,981 [INFO]  MouseLink start_recording
+2024-08-24 16:28:42,981 [DEBUG]  Trial.log 3.979 start 
+2024-08-24 16:28:42,981 [DEBUG]  MouseLink message
+2024-08-24 16:28:42,983 [DEBUG]  Trial.log 3.981 show fixation 
+2024-08-24 16:28:42,983 [INFO]  send trigger 0
+2024-08-24 16:28:42,983 [DEBUG]  MouseLink message
+2024-08-24 16:28:43,488 [DEBUG]  Trial.log 4.486 show cue 
+2024-08-24 16:28:43,488 [INFO]  send trigger 1
+2024-08-24 16:28:43,488 [DEBUG]  MouseLink message
+2024-08-24 16:28:44,995 [DEBUG]  Trial.log 5.993 show fixation 
+2024-08-24 16:28:44,995 [INFO]  send trigger 0
+2024-08-24 16:28:44,995 [DEBUG]  MouseLink message
+2024-08-24 16:28:45,505 [DEBUG]  Trial.log 6.503 start sound 
+2024-08-24 16:28:45,505 [INFO]  send trigger 2
+2024-08-24 16:28:45,505 [DEBUG]  MouseLink message
+2024-08-24 16:28:46,005 [DEBUG]  Trial.log 7.003 start decision window 
+2024-08-24 16:28:46,005 [DEBUG]  MouseLink message
+2024-08-24 16:28:48,785 [DEBUG]  Trial.log 9.782 response response = j, performance = Correct
+2024-08-24 16:28:48,785 [DEBUG]  MouseLink message
+2024-08-24 16:28:48,785 [DEBUG]  Trial.log 9.782 done 
+2024-08-24 16:28:48,785 [INFO]  send trigger 4
+2024-08-24 16:28:48,785 [DEBUG]  MouseLink message
+2024-08-24 16:28:48,785 [INFO]  end trial [{"time": 3.9787340832408518, "event": "initialize", "status": "ok"}, {"time": 3.978837375063449, "event": "start recording"}, {"time": 3.978910708334297, "event": "start"}, {"time": 3.9806794999167323, "event": "show fixation"}, {"time": 4.485828916775063, "event": "show cue"}, {"time": 5.992746958276257, "event": "show fixation"}, {"time": 6.502597708255053, "event": "start sound"}, {"time": 7.002789000049233, "event": "start decision window"}, {"time": 9.782288749935105, "event": "response", "response": "j", "performance": "Correct"}, {"time": 9.782397374976426, "event": "done"}]
+2024-08-24 16:28:48,785 [INFO]  MouseLink stop_recording
+2024-08-24 16:28:48,791 [INFO]  gt.status is ok
+2024-08-24 16:28:48,791 [DEBUG]  add bonus points -0.27951862500049174 (total = 0)
+2024-08-24 16:28:48,791 [INFO]  current bonus: 0.0
+2024-08-24 16:28:48,791 [INFO]  1/30
+2024-08-24 16:28:48,791 [INFO]  begin trial {"cue_direction": "right", "stimulus": "B|B", "correct_response": "j", "left_cue_condition": 0.3, "stimA_condition": 0.3}
+2024-08-24 16:28:48,791 [DEBUG]  Trial.log 9.789 initialize status = ok
+2024-08-24 16:28:48,791 [DEBUG]  MouseLink message
+2024-08-24 16:28:48,791 [DEBUG]  Trial.log 9.789 start recording 
+2024-08-24 16:28:48,791 [DEBUG]  MouseLink message
+2024-08-24 16:28:48,791 [INFO]  MouseLink start_recording
+2024-08-24 16:28:48,791 [DEBUG]  Trial.log 9.789 start 
+2024-08-24 16:28:48,791 [DEBUG]  MouseLink message
+2024-08-24 16:28:48,792 [DEBUG]  Trial.log 9.790 show fixation 
+2024-08-24 16:28:48,792 [INFO]  send trigger 0
+2024-08-24 16:28:48,792 [DEBUG]  MouseLink message
+2024-08-24 16:28:49,298 [DEBUG]  Trial.log 10.296 show cue 
+2024-08-24 16:28:49,298 [INFO]  send trigger 1
+2024-08-24 16:28:49,298 [DEBUG]  MouseLink message
+2024-08-24 16:28:50,804 [DEBUG]  Trial.log 11.801 show fixation 
+2024-08-24 16:28:50,804 [INFO]  send trigger 0
+2024-08-24 16:28:50,804 [DEBUG]  MouseLink message
+2024-08-24 16:28:51,312 [DEBUG]  Trial.log 12.310 start sound 
+2024-08-24 16:28:51,312 [INFO]  send trigger 2
+2024-08-24 16:28:51,312 [DEBUG]  MouseLink message
+2024-08-24 16:28:51,812 [DEBUG]  Trial.log 12.810 start decision window 
+2024-08-24 16:28:51,812 [DEBUG]  MouseLink message

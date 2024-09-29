@@ -1,0 +1,34 @@
+2024-08-23 14:20:08,809 [INFO]  starting up 24-08-23-1420_setting0 at 1.7983287915121764
+2024-08-23 14:20:08,838 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 14:20:08,838 [INFO]  setting file name: s0
+2024-08-23 14:20:08,839 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 14:20:10,007 [INFO]  Created window with size [3840 2160]
+2024-08-23 14:20:10,507 [INFO]  Using dummy triggers
+2024-08-23 14:20:10,507 [INFO]  begin setup_eyetracker
+2024-08-23 14:20:10,508 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please tell the experimenter. (Wait for the experimenter (space))
+2024-08-23 14:20:34,783 [INFO]  starting up 24-08-23-1420_setting0 at 2.0506872916594148
+2024-08-23 14:20:34,809 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 14:20:34,809 [INFO]  setting file name: s0
+2024-08-23 14:20:34,810 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 14:20:35,955 [INFO]  Created window with size [3840 2160]
+2024-08-23 14:20:36,407 [INFO]  Using dummy triggers
+2024-08-23 14:20:36,407 [INFO]  begin setup_eyetracker
+2024-08-23 14:20:36,408 [DEBUG]  message: Now we're going to calibrate the eyetracker. Please tell the experimenter. (Wait for the experimenter (space))
+2024-08-23 14:20:37,448 [INFO]  New EyeLink object
+2024-08-23 14:20:37,448 [INFO]  Initializing new tracker
+2024-08-23 14:20:38,146 [DEBUG]  EyeLink.message Set up calibration
+2024-08-23 14:20:38,178 [INFO]  Tracker initialized
+2024-08-23 14:20:38,179 [DEBUG]  EyeLink.message Set up calibration
+2024-08-23 14:20:38,197 [INFO]  doTrackerSetup
+2024-08-23 14:20:56,722 [INFO]  starting up 24-08-23-1420_setting0 at 1.99294541683048
+2024-08-23 14:20:56,754 [INFO]  git SHA: b4a6af2002eea4174ba9918dc19b4af7d929f6c4
+2024-08-23 14:20:56,754 [INFO]  setting file name: s0
+2024-08-23 14:20:56,754 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2024-08-23 14:20:57,906 [INFO]  Created window with size [3840 2160]
+2024-08-23 14:20:58,341 [INFO]  Using dummy triggers
+2024-08-23 14:20:58,341 [INFO]  begin welcome
+2024-08-23 14:20:58,341 [INFO]  send trigger 4
+2024-08-23 14:20:58,341 [INFO]  start Welcome
+2024-08-23 14:20:58,341 [DEBUG]  message: Welcome to the experiment! (None)
+2024-08-23 14:20:59,119 [DEBUG]  message: During the test, you are going to receive a series of sound pairs coming from both the left and the right channels of your headset. (None)
+2024-08-23 14:20:59,781 [DEBUG]  message: Sometimes, the sounds are the same: (None)
