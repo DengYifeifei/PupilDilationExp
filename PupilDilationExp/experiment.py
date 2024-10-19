@@ -44,7 +44,7 @@ def stage(f):
             if f.__name__ == "run_main":
                 logging.warning('Continuing to save data...')
             else:
-                self.win.clearAutoDraw()
+                self.win.clearAutoDraws()
                 self.win.showMessage('The experiment ran into a problem! Press C to continue or Q to quit and save data')
                 self.win.flip()
                 keys = event.waitKeys(keyList=['c', 'q'])
@@ -94,6 +94,7 @@ class Experiment(object):
         self.sound_len = 2.5 
         self.training_pass_boundry = 0.85
 
+
         timestamp = datetime.now().strftime('%y-%m-%d-%H%M')
         self.id = f'{timestamp}_setting{setting_number}'
 
@@ -109,6 +110,8 @@ class Experiment(object):
         spec = importlib.util.spec_from_file_location(setting_file_name, setting_path)
         setting_module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(setting_module)
+
+        self.save_data_count = 0
 
         #setting_file = importlib.import_module(setting_file_name)
         setting = setting_module.setting
@@ -530,7 +533,7 @@ class Experiment(object):
     @stage
     def main(self, resume_block=None):
 
-        self.message(msg= "Ready? Let go!", space= True)
+        self.message(msg= "Ready? Let's go!", space= True)
         self.hide_message()
 
         # iterating through blocks 
@@ -585,6 +588,7 @@ class Experiment(object):
 
             # end while
             # block summary
+            self.save_data()
             if i < self.n_block - 1:
                 self.center_message(f"You've completed block {i + 1} of {self.n_block}.\n{self.bonus.report_bonus()}.\n\n"
                     "Take a short break. Then let the experimenter know when you're ready to continue.", space=False)
@@ -604,12 +608,15 @@ class Experiment(object):
         }
 
     @stage
-    def save_data(self):
-        self.message(f"You're done! {self.bonus.report_bonus('final')}",
-                     tip_text="give us a few seconds to save the data", space=False)
+    def save_data(self, done = False):
+        if done == True:
+            self.message(f"You're done! {self.bonus.report_bonus('final')}",
+                        tip_text="give us a few seconds to save the data", space=False)
         psychopy.logging.flush()
 
-        fp = f'{DATA_PATH}/{self.id}.json'
+        self.save_data_count += 1
+
+        fp = f'{DATA_PATH}/{self.id}/{self.save_data_count}.json'
         with open(fp, 'w') as f:
             f.write(jsonify(self.all_data))
         logging.info('wrote %s', fp)
@@ -617,7 +624,8 @@ class Experiment(object):
         if self.eyelink:
             self.eyelink.save_data()
 
-        self.message("Data saved! Please let the experimenter know that you've completed the study.", space=True,
+        if done == True:
+            self.message("Data saved! Please let the experimenter know that you've completed the study.", space=True,
                     tip_text='press space to exit')
         
        #print("\n\nFINAL BONUS: ", self.bonus.dollars())
