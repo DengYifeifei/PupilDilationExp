@@ -44,7 +44,7 @@ def stage(f):
             if f.__name__ == "run_main":
                 logging.warning('Continuing to save data...')
             else:
-                self.win.clearAutoDraws()
+                self.win.clearAutoDraw()
                 self.win.showMessage('The experiment ran into a problem! Press C to continue or Q to quit and save data')
                 self.win.flip()
                 keys = event.waitKeys(keyList=['c', 'q'])
@@ -617,6 +617,8 @@ class Experiment(object):
         self.save_data_count += 1
 
         fp = f'{DATA_PATH}/{self.id}/{self.save_data_count}.json'
+        directory = os.path.dirname(fp)
+        os.makedirs(directory, exist_ok=True) 
         with open(fp, 'w') as f:
             f.write(jsonify(self.all_data))
         logging.info('wrote %s', fp)
