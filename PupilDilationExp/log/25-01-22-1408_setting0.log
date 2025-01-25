@@ -1,0 +1,8 @@
+2025-01-22 14:08:28,390 [INFO]  starting up 25-01-22-1408_setting0 at 46.259411558974534
+2025-01-22 14:08:28,499 [INFO]  git SHA: 783fad512c486bdfadafa23d68773e948e6c70b9
+2025-01-22 14:08:28,500 [INFO]  setting file name: s0
+2025-01-22 14:08:28,501 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2025-01-22 14:08:29,729 [INFO]  Created window with size [2880 1800]
+2025-01-22 14:08:29,954 [INFO]  Using dummy triggers
+2025-01-22 14:08:29,954 [INFO]  begin main
+2025-01-22 14:08:29,954 [DEBUG]  message: Ready? Let's go! (None)

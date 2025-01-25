@@ -1,0 +1,35 @@
+2025-01-22 14:16:48,563 [INFO]  starting up 25-01-22-1416_setting0 at 28.714142466
+2025-01-22 14:16:48,719 [INFO]  git SHA: 783fad512c486bdfadafa23d68773e948e6c70b9
+2025-01-22 14:16:48,720 [INFO]  setting file name: s0
+2025-01-22 14:16:48,721 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2025-01-22 14:16:50,273 [INFO]  Created window with size [2880 1800]
+2025-01-22 14:16:50,476 [INFO]  Using dummy triggers
+2025-01-22 14:16:50,476 [INFO]  begin main
+2025-01-22 14:16:50,477 [DEBUG]  message: Ready? Let's go! (None)
+2025-01-22 14:16:53,075 [INFO]  Starting block 0: {'left_cue_condition': 0.3, 'stimA_condition': 0.5}
+2025-01-22 14:16:53,076 [INFO]  block 0 label:('<<<>>>>>>>', 'oooooxxxxx')
+2025-01-22 14:16:53,076 [DEBUG]  message: Block 1: 
+cue proportion <<<>>>>>>> 
+stimulus proportion oooooxxxxx (None)
+2025-01-22 14:16:53,822 [INFO]  begin trial {"cue_direction": "right", "stimulus": "B|B", "correct_response": "j", "left_cue_condition": 0.3, "stimA_condition": 0.5, "response": null, "performance": null, "rt": null}
+2025-01-22 14:16:53,822 [DEBUG]  Trial.log 33.973 initialize status = ok
+2025-01-22 14:16:53,822 [DEBUG]  MouseLink message
+2025-01-22 14:16:53,822 [DEBUG]  Trial.log 33.973 start recording 
+2025-01-22 14:16:53,822 [DEBUG]  MouseLink message
+2025-01-22 14:16:53,822 [INFO]  MouseLink start_recording
+2025-01-22 14:16:53,822 [DEBUG]  Trial.log 33.973 start 
+2025-01-22 14:16:53,822 [DEBUG]  MouseLink message
+2025-01-22 14:16:53,828 [DEBUG]  Trial.log 33.979 show fixation 
+2025-01-22 14:16:53,828 [INFO]  send trigger 0
+2025-01-22 14:16:53,829 [DEBUG]  MouseLink message
+2025-01-22 14:16:54,342 [DEBUG]  Trial.log 34.493 show cue 
+2025-01-22 14:16:54,342 [INFO]  send trigger 1
+2025-01-22 14:16:54,342 [DEBUG]  MouseLink message
+2025-01-22 14:16:55,854 [DEBUG]  Trial.log 36.005 show fixation 
+2025-01-22 14:16:55,854 [INFO]  send trigger 0
+2025-01-22 14:16:55,854 [DEBUG]  MouseLink message
+2025-01-22 14:16:57,050 [DEBUG]  Trial.log 37.200 start sound 
+2025-01-22 14:16:57,050 [INFO]  send trigger 2
+2025-01-22 14:16:57,050 [DEBUG]  MouseLink message
+2025-01-22 14:16:57,551 [DEBUG]  Trial.log 37.701 start decision window 
+2025-01-22 14:16:57,551 [DEBUG]  MouseLink message

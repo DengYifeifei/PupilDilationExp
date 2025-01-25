@@ -574,15 +574,18 @@ class Experiment(object):
                         msg = 'The experiment ran into a problem! Please tell the experimenter.'
 
                     self.win.clearAutoDraw()
-                    self.win.showMessage(msg + '\n' + 'Press C to continue, R to recalibrate, or Q to terminate the experiment and save data')
+                    self.win.showMessage(msg + '\n' + 'Press C to continue, R to recalibrate, P to skip current block, or Q to terminate the experiment and save data')
                     self.win.flip()
-                    keys = event.waitKeys(keyList=['c', 'r', 'q'])
+                    keys = event.waitKeys(keyList=['c', 'r', 'q', 'p'])
                     self.win.showMessage(None)
                     if 'c' in keys:
                         continue
                     elif 'r' in keys:
                         self.eyelink.calibrate()
                     elif 'q' in keys:
+                        self.emergency_save_data()
+                        return
+                    elif 'p' in keys:
                         self.emergency_save_data()
                         break
 

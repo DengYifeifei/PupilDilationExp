@@ -1,0 +1,31 @@
+27.7119 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+29.3050 	INFO 	time is 2025-01-22 14:15:14,051801
+29.4450 	WARNING 	Monitor specification not found. Creating a temporary one...
+29.4528 	WARNING 	User requested fullscreen with size [1350  750], but screen is actually [1440, 900]. Using actual size
+31.1605 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+31.1616 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fe5ee2252b0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fe5ee225250>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fe5ee2250a0>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fe5eb9951c0>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+31.1617 	EXP 	window1: backgroundImage = None
+31.1618 	EXP 	window1: backgroundFit = 'cover'
+31.1678 	INFO 	Mouse: using default window
+31.1708 	EXP 	window1: mouseVisible = False
+31.1709 	EXP 	window1: units = 'pix'
+31.1709 	INFO 	Mouse: using default window
+31.3421 	WARNING 	t of last frame was 174.39ms (=1/5)
+33.6158 	DATA 	Keypress: space
+33.6217 	WARNING 	t of last frame was 2259.74ms (=1/0)
+34.6549 	DATA 	Keypress: space
+34.6595 	WARNING 	t of last frame was 1017.96ms (=1/0)
+35.1841 	WARNING 	t of last frame was 505.04ms (=1/1)
+35.8761 	DATA 	Keypress: lcommand
+36.6970 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+37.9866 	EXP 	Sound  reached end of file
+37.9867 	EXP 	Sound  started
+39.0577 	DATA 	Keypress: f
+43.7184 	EXP 	Sound  reached end of file
+43.7185 	EXP 	Sound  started
+44.0194 	DATA 	Keypress: lcommand
+44.9826 	DATA 	Keypress: lctrl
+47.2190 	DATA 	No keypress (maxWait exceeded)

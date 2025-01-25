@@ -39,7 +39,7 @@ def main(setting_number=None, name=None, test=False, fast=False, full=False, mou
                 #exp.practice_intro()
                 #exp.practice()
                 #exp.intro_main()
-                exp.setup_eyetracker()
+                #exp.setup_eyetracker()
                 exp.main()
                 exp.save_data(done=True)
             exp.save_data(done=True)
