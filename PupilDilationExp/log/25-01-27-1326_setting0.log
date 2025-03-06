@@ -1,0 +1,89 @@
+2025-01-27 13:26:43,515 [INFO]  starting up 25-01-27-1326_setting0 at 30.821219107994693
+2025-01-27 13:26:43,610 [INFO]  git SHA: 3ca9e2792a7c0a1ecb79e3e0c2870323a2b57cf4
+2025-01-27 13:26:43,611 [INFO]  setting file name: s0
+2025-01-27 13:26:43,613 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2025-01-27 13:26:45,572 [INFO]  Created window with size [2880 1800]
+2025-01-27 13:26:45,818 [INFO]  Using dummy triggers
+2025-01-27 13:26:45,818 [INFO]  begin practice
+2025-01-27 13:26:45,818 [INFO]  start practice trials
+2025-01-27 13:26:45,818 [DEBUG]  message: complete 8 practice rounds to continue (None)
+2025-01-27 13:27:18,846 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": null, "stimA_condition": null, "response": null, "performance": null, "rt": null}
+2025-01-27 13:27:18,846 [DEBUG]  Trial.log 66.152 initialize status = ok
+2025-01-27 13:27:18,846 [DEBUG]  MouseLink message
+2025-01-27 13:27:18,846 [DEBUG]  Trial.log 66.153 start recording 
+2025-01-27 13:27:18,846 [DEBUG]  MouseLink message
+2025-01-27 13:27:18,846 [INFO]  MouseLink start_recording
+2025-01-27 13:27:18,846 [DEBUG]  Trial.log 66.153 start 
+2025-01-27 13:27:18,847 [DEBUG]  MouseLink message
+2025-01-27 13:27:18,852 [DEBUG]  Trial.log 66.158 show fixation 
+2025-01-27 13:27:18,852 [INFO]  send trigger 0
+2025-01-27 13:27:18,852 [DEBUG]  MouseLink message
+2025-01-27 13:27:19,367 [DEBUG]  Trial.log 66.673 show cue 
+2025-01-27 13:27:19,367 [INFO]  send trigger 1
+2025-01-27 13:27:19,367 [DEBUG]  MouseLink message
+2025-01-27 13:27:20,881 [DEBUG]  Trial.log 68.187 show fixation 
+2025-01-27 13:27:20,881 [INFO]  send trigger 0
+2025-01-27 13:27:20,881 [DEBUG]  MouseLink message
+2025-01-27 13:27:21,390 [ERROR]  Caught exception in stage practice
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 402, in practice
+    trial.run()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 274, in run
+    self.sound()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 208, in sound
+    sound_stim = sound.Sound(soundpath, secs=self.sound_duration)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/backend_ptb.py", line 334, in __init__
+    self.setSound(value, secs=self.secs, octave=self.octave,
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/backend_ptb.py", line 423, in setSound
+    _SoundBase.setSound(self, value, secs, octave, hamming, log)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/_base.py", line 207, in setSound
+    raise ValueError(msg + value)
+ValueError: setSound: could not find a sound file named ./stim/G|P.mp3
+2025-01-27 13:27:22,301 [ERROR]  Uncaught exception in main
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/main.py", line 40, in main
+    exp.practice()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 402, in practice
+    trial.run()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 274, in run
+    self.sound()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 208, in sound
+    sound_stim = sound.Sound(soundpath, secs=self.sound_duration)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/backend_ptb.py", line 334, in __init__
+    self.setSound(value, secs=self.secs, octave=self.octave,
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/backend_ptb.py", line 423, in setSound
+    _SoundBase.setSound(self, value, secs, octave, hamming, log)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/_base.py", line 207, in setSound
+    raise ValueError(msg + value)
+ValueError: setSound: could not find a sound file named ./stim/G|P.mp3
+2025-01-27 13:27:22,316 [INFO]  begin save_data
+2025-01-27 13:27:22,317 [WARNING]  Couldn't convert <triggers.Triggers object at 0x7fefed374130> to json; falling back on string 
+2025-01-27 13:27:22,317 [INFO]  wrote data/exp/v1/25-01-27-1326_setting0/1.json
+2025-01-27 13:27:22,317 [INFO]  MouseLink save_data
+2025-01-27 13:27:22,331 [ERROR]  error on second save data attempt
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/main.py", line 40, in main
+    exp.practice()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 402, in practice
+    trial.run()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 274, in run
+    self.sound()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 208, in sound
+    sound_stim = sound.Sound(soundpath, secs=self.sound_duration)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/backend_ptb.py", line 334, in __init__
+    self.setSound(value, secs=self.secs, octave=self.octave,
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/backend_ptb.py", line 423, in setSound
+    _SoundBase.setSound(self, value, secs, octave, hamming, log)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/myenv/lib/python3.9/site-packages/psychopy/sound/_base.py", line 207, in setSound
+    raise ValueError(msg + value)
+ValueError: setSound: could not find a sound file named ./stim/G|P.mp3
+2025-01-27 13:27:22,332 [WARNING]  emergency save data
+2025-01-27 13:27:22,332 [INFO]  MouseLink save_data
+2025-01-27 13:27:22,332 [WARNING]  eyelink data saved?
+2025-01-27 13:27:22,333 [INFO]  wrote data/exp/v1/25-01-27-1326_setting0.txt

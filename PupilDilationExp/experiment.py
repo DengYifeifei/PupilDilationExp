@@ -60,24 +60,10 @@ def stage(f):
 
     return wrapper
 
-# def get_next_config_number():
-#     used = set()
-#     for fn in os.listdir(DATA_PATH):
-#         m = re.match(r'.*_P(\d+)\.', fn)
-#         if m:
-#             used.add(int(m.group(1)))
-
-#     possible = range(0, 1 + len(os.listdir(CONFIG_PATH)))
-#     try:
-#         n = next(i for i in possible if i not in used)
-#         return n
-#     except StopIteration:
-#         print("WARNING: USING RANDOM CONFIGURATION NUMBER")
-#         return np.random.choice(list(possible))
 
 
 def text_box(win, msg, pos, autoDraw=True, wrapWidth=.8, height=.035, alignText='left', **kwargs): 
-    '''调整word wrap'''
+    '''adjust word wrap'''
     stim = visual.TextStim(win, msg, pos=pos, color='white', wrapWidth=wrapWidth, height=height, alignText=alignText, anchorHoriz='center', **kwargs)
     stim.autoDraw = autoDraw
     return stim
@@ -170,17 +156,11 @@ class Experiment(object):
         prm = {
             'eyelink': self.eyelink,
             **self.parameters,
-            # 'gaze_contingent': False,
-            # 'time_limit': None,
-            # 'pos': (.3, 0),
-            #'start_mode': 'immediate',
-            # 'space_start': False,
-            # ** select
             **select, 
             **kws
         }
-        trial = Trial(self.win, **prm) #gt = GraphTrial(self.win, **prm)
-        self.practice_data.append(trial.data) #self.practice_data.append(gt.data)
+        trial = Trial(self.win, **prm) 
+        self.practice_data.append(trial.data)
         return trial 
 
 ###
@@ -221,9 +201,6 @@ class Experiment(object):
     def on_flip(self):
         if 'q' in event.getKeys():
             exit()
-        # if 'f' in event.getKeys(): 
-        '''为什么不用KEY_QUIT'''
-
         self.win.callOnFlip(self.on_flip)
 
     def hide_message(self):
@@ -353,7 +330,7 @@ class Experiment(object):
         core.wait(0.5)
         self.message(tmsg= "Now please make the response",
                             space=False)
-        logging.info('start decision window')
+        #logging.info('start decision window')
         example_trial.recieved_response = event.waitKeys(keyList=KEYS_CORRECT, maxWait=10.0)
 
         if example_trial.recieved_response:
@@ -551,9 +528,11 @@ class Experiment(object):
             self.message(msg= f"Block {i+1}: \ncue proportion {cue_label} \nstimulus proportion {stim_label}", space=True)
             self.hide_message()
 
+            
+
             trial_count = 0
             print(trial_count, self.block_length)
-
+ 
             while trial_count < self.block_length: 
                 try:
                     trial_count += 1

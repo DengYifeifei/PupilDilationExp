@@ -32,12 +32,12 @@ def main(setting_number=None, name=None, test=False, fast=False, full=False, mou
                 #exp.intro_main()
                 exp.main()
             else:
-                exp.practice_blocklen = 2 
+                exp.practice_blocklen = 8 
                 exp.block_length = 30
                 #exp.welcome()
                 exp.n_block = 3
                 #exp.practice_intro()
-                #exp.practice()
+                exp.practice()
                 #exp.intro_main()
                 #exp.setup_eyetracker()
                 exp.main()

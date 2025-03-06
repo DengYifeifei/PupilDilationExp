@@ -1,0 +1,29 @@
+28.7942 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+30.8224 	INFO 	time is 2025-01-27 13:26:43,516493
+30.9198 	WARNING 	Monitor specification not found. Creating a temporary one...
+30.9271 	WARNING 	User requested fullscreen with size [1350  750], but screen is actually [1440, 900]. Using actual size
+32.8758 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+32.8777 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fefed8e63a0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fefed8e6340>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fefed8e6190>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fefeb3122b0>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+32.8778 	EXP 	window1: backgroundImage = None
+32.8778 	EXP 	window1: backgroundFit = 'cover'
+32.8881 	INFO 	Mouse: using default window
+32.8900 	EXP 	window1: mouseVisible = False
+32.8901 	EXP 	window1: units = 'pix'
+32.8901 	INFO 	Mouse: using default window
+33.1313 	WARNING 	t of last frame was 243.54ms (=1/4)
+33.1530 	WARNING 	t of last frame was 21.67ms (=1/46)
+65.5732 	DATA 	Keypress: lcommand
+66.1415 	DATA 	Keypress: space
+66.1515 	WARNING 	t of last frame was 32998.52ms (=1/0)
+66.6680 	WARNING 	t of last frame was 504.41ms (=1/1)
+66.8759 	DATA 	Keypress: q
+68.0905 	DATA 	Keypress: a
+68.1812 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+68.3609 	DATA 	Keypress: a
+68.5335 	DATA 	Keypress: a
+68.7377 	DATA 	Keypress: a
+68.9274 	DATA 	Keypress: a
+69.6027 	DATA 	Keypress: q

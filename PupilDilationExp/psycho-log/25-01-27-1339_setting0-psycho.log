@@ -1,0 +1,27 @@
+26.2425 	WARNING 	Font Manager failed to load file /System/Library/PrivateFrameworks/FontServices.framework/Resources/Reserved/PingFangUI.ttc
+27.7082 	INFO 	time is 2025-01-27 13:39:47,112955
+27.8023 	WARNING 	Monitor specification not found. Creating a temporary one...
+27.8130 	WARNING 	User requested fullscreen with size [1350  750], but screen is actually [1440, 900]. Using actual size
+29.4021 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+29.4041 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8d819b1160>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8d819b1100>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8d819aef10>, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f8d81b31070>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=False, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+29.4043 	EXP 	window1: backgroundImage = None
+29.4043 	EXP 	window1: backgroundFit = 'cover'
+29.4085 	INFO 	Mouse: using default window
+29.4103 	EXP 	window1: mouseVisible = False
+29.4104 	EXP 	window1: units = 'pix'
+29.4105 	INFO 	Mouse: using default window
+29.5810 	WARNING 	t of last frame was 172.65ms (=1/5)
+29.6084 	WARNING 	t of last frame was 27.37ms (=1/36)
+89.6029 	DATA 	Keypress: space
+89.6144 	WARNING 	t of last frame was 60006.02ms (=1/0)
+90.1388 	WARNING 	t of last frame was 505.83ms (=1/1)
+91.6569 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+92.3835 	EXP 	Sound  reached end of file
+92.3835 	EXP 	Sound  started
+92.3962 	DATA 	Keypress: a
+92.6185 	DATA 	Keypress: a
+92.9132 	DATA 	Keypress: a
+93.7521 	DATA 	Keypress: q

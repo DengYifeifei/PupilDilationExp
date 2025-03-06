@@ -5,7 +5,7 @@ import pandas as pd
 import subprocess
 
 from config import VERSION
-wid = '24-09-29-1717_setting0'
+wid = '25-01-27-1603_setting0'
 if len(sys.argv) > 1:
     VERSION = sys.argv[1]
 

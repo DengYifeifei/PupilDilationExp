@@ -1,0 +1,76 @@
+2025-01-27 13:39:47,111 [INFO]  starting up 25-01-27-1339_setting0 at 27.706576839991612
+2025-01-27 13:39:47,204 [INFO]  git SHA: 3ca9e2792a7c0a1ecb79e3e0c2870323a2b57cf4
+2025-01-27 13:39:47,204 [INFO]  setting file name: s0
+2025-01-27 13:39:47,206 [INFO]  parameters {'points_per_cent': 2, 'time_limit': 5, 'correct_responses': ['f', 'j'], 'combination_num': 8}
+2025-01-27 13:39:48,809 [INFO]  Created window with size [2880 1800]
+2025-01-27 13:39:48,978 [INFO]  Using dummy triggers
+2025-01-27 13:39:48,979 [INFO]  begin practice
+2025-01-27 13:39:48,979 [INFO]  start practice trials
+2025-01-27 13:39:48,979 [DEBUG]  message: complete 8 practice rounds to continue (None)
+2025-01-27 13:40:49,020 [INFO]  begin trial {"cue_direction": "left", "stimulus": "A|B", "correct_response": "f", "left_cue_condition": null, "stimA_condition": null, "response": null, "performance": null, "rt": null}
+2025-01-27 13:40:49,020 [DEBUG]  Trial.log 89.616 initialize status = ok
+2025-01-27 13:40:49,021 [DEBUG]  MouseLink message
+2025-01-27 13:40:49,021 [DEBUG]  Trial.log 89.616 start recording 
+2025-01-27 13:40:49,021 [DEBUG]  MouseLink message
+2025-01-27 13:40:49,021 [INFO]  MouseLink start_recording
+2025-01-27 13:40:49,021 [DEBUG]  Trial.log 89.616 start 
+2025-01-27 13:40:49,021 [DEBUG]  MouseLink message
+2025-01-27 13:40:49,029 [DEBUG]  Trial.log 89.624 show fixation 
+2025-01-27 13:40:49,029 [INFO]  send trigger 0
+2025-01-27 13:40:49,029 [DEBUG]  MouseLink message
+2025-01-27 13:40:49,549 [DEBUG]  Trial.log 90.144 show cue 
+2025-01-27 13:40:49,549 [INFO]  send trigger 1
+2025-01-27 13:40:49,549 [DEBUG]  MouseLink message
+2025-01-27 13:40:51,069 [DEBUG]  Trial.log 91.664 show fixation 
+2025-01-27 13:40:51,069 [INFO]  send trigger 0
+2025-01-27 13:40:51,069 [DEBUG]  MouseLink message
+2025-01-27 13:40:51,788 [DEBUG]  Trial.log 92.383 start sound 
+2025-01-27 13:40:51,788 [INFO]  send trigger 2
+2025-01-27 13:40:51,788 [DEBUG]  MouseLink message
+2025-01-27 13:40:52,288 [DEBUG]  Trial.log 92.884 start decision window 
+2025-01-27 13:40:52,289 [DEBUG]  MouseLink message
+2025-01-27 13:40:52,318 [ERROR]  Caught exception in stage practice
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 402, in practice
+    trial.run()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 279, in run
+    self.recieved_response = self.wait_keys(KEYS_CORRECT, time_limit=3.0)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 115, in wait_keys
+    raise AbortKeyPressed()
+trial.AbortKeyPressed
+2025-01-27 13:40:53,164 [ERROR]  Uncaught exception in main
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/main.py", line 40, in main
+    exp.practice()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 402, in practice
+    trial.run()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 279, in run
+    self.recieved_response = self.wait_keys(KEYS_CORRECT, time_limit=3.0)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 115, in wait_keys
+    raise AbortKeyPressed()
+trial.AbortKeyPressed
+2025-01-27 13:40:53,183 [INFO]  begin save_data
+2025-01-27 13:40:53,185 [WARNING]  Couldn't convert <triggers.Triggers object at 0x7f8d81fd3190> to json; falling back on string 
+2025-01-27 13:40:53,185 [INFO]  wrote data/exp/v1/25-01-27-1339_setting0/1.json
+2025-01-27 13:40:53,185 [INFO]  MouseLink save_data
+2025-01-27 13:40:53,193 [ERROR]  error on second save data attempt
+Traceback (most recent call last):
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/main.py", line 40, in main
+    exp.practice()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 40, in wrapper
+    f(self, *args, **kwargs)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/experiment.py", line 402, in practice
+    trial.run()
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 279, in run
+    self.recieved_response = self.wait_keys(KEYS_CORRECT, time_limit=3.0)
+  File "/Users/wangying/Desktop/PupilDilationPsychopy/PupilDilationExp/trial.py", line 115, in wait_keys
+    raise AbortKeyPressed()
+trial.AbortKeyPressed
+2025-01-27 13:40:53,195 [WARNING]  emergency save data
+2025-01-27 13:40:53,196 [INFO]  MouseLink save_data
+2025-01-27 13:40:53,196 [WARNING]  eyelink data saved?
+2025-01-27 13:40:53,198 [INFO]  wrote data/exp/v1/25-01-27-1339_setting0.txt

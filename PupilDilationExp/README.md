@@ -1,3 +1,4 @@
-- X during a trial triggers recalibration 
-- escape during a drift check triggers the eyelink setup screen
-- escape again brings up a screen allowing you to do several things: abort experiment, recalibrate, disable drift checks
+- Refer to trial.py for the code handling individual trials.
+- Refer to experiment.py for the code managing instructions, practice trials, and test trials.
+- Press 'A' or use Command + Q to quit the program during full-screen mode.  
+- For calibration issues, could be helpful to check setup_calibration function in eyetracking.py.

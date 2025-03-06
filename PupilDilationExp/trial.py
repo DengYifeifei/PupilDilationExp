@@ -6,17 +6,10 @@ from eyetracking import height2pix
 from util import jsonify
 import random
 from config import KEY_CONTINUE, LABEL_CONTINUE
+from config import KEY_CONTINUE, KEY_ABORT, SOUND_PATH, KEYS_CORRECT
 
 wait = core.wait
 
-from config import KEY_CONTINUE, KEY_ABORT, SOUND_PATH, KEYS_CORRECT
-
-# TRIGGERS = {
-#     'show description': 0,
-#     'show graph': 1,
-#     'start acting': 2,
-#     'done': 3,
-# }
 
 TRIGGERS = {
     'show fixation': 0,
@@ -67,11 +60,9 @@ class Trial(object):
         self.show_response = show_response
         #self.disable_click = False
         
-        self.correct = 0 #self.score = 0
+        self.correct = 0 
         self.rt = None
-        #self.current_state = None
-        self.fixated = None #在的时候有用calibration的时候有用
-        self.fix_verified = None #后面没有用到
+        self.fixated = None #用calibration的时候有用
         self.data = {
             "trial": {
                 'cue_direction': getattr(self, 'cue_direction', None), 
@@ -83,27 +74,10 @@ class Trial(object):
                 'performance': None,
                 'rt': None
             },
-            "events": [], # fixation, cue, balabala       
+            "events": [], # fixation, cue, ...       
         }
-        # self.data = {
-        #     "trial": {
-        #         "kind": self.__class__.__name__,
-        #         "graph": graph,
-        #         "rewards": rewards,
-        #         "reward_info": reward_info,
-        #         "initial_stage": initial_stage,
-        #         "hide_states": hide_states,
-        #         "hide_rewards_while_acting": hide_rewards_while_acting,
-        #         "hide_edges_while_acting": hide_edges_while_acting,
 
-        #         "start": start,
-        #     },
-        #     "events": [],
-        #     "flips": [],
-        #     "mouse": [],
-        # }
         logging.info("begin trial " + jsonify(self.data["trial"]))
-        #self.gfx = Graphics(win)
         #self.mouse = event.Mouse()
         self.done = False
         
@@ -274,8 +248,8 @@ class Trial(object):
         self.sound()
         sound_onset = core.getTime()
         
-        wait(0.5)
-        self.log('start decision window')
+        #wait(0.5)
+        #self.log('start decision window')
         self.recieved_response = self.wait_keys(KEYS_CORRECT, time_limit=3.0)
         # show = str(self.recieved_response[0])
         # print(show)
@@ -325,7 +299,7 @@ class Trial(object):
        
         self.win.flip()
 
-        return self.status #为什么要return
+        return self.status 
     
 
     # class CalibrationTrial(GraphTrial):

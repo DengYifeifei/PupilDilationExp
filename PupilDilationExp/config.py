@@ -13,13 +13,13 @@ LABEL_SWITCH = 'Key F'
 
 
 SOUND_PATH = {
-    'A|A': './stim/G|G.mp3',
-    'A|B': './stim/G|P.mp3',
-    'B|B': './stim/P|P.mp3',
-    'B|A': './stim/P|G.mp3'
+    'A|A': './stim/GG.mp3',
+    'A|B': './stim/GP.mp3',
+    'B|B': './stim/PP.mp3',
+    'B|A': './stim/PG.mp3'
 }
 
-SAME_SOUND_A = "./stim/G|G.mp3"
-SAME_SOUND_B = "./stim/P|P.mp3"
-DIFFERENT_SOUND = "./stim/G|P.mp3"
+SAME_SOUND_A = "./stim/GG.mp3"
+SAME_SOUND_B = "./stim/PP.mp3"
+DIFFERENT_SOUND = "./stim/GP.mp3"
 
